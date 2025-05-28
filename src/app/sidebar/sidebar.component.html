@@ -1,0 +1,43 @@
+<div class="sidebar-container" [class.expanded]="expanded">
+  <button class="sidebar-toggle" (click)="toggleSidebar()">
+    ☰
+  </button>
+
+  <ul class="sidebar-list">
+    <li (click)="navigate('')">
+      <i class="fas fa-home"></i>
+      <span class="link-text">Inicio</span>
+    </li>
+
+    <li (click)="toggleSoluciones()">
+      <i class="fas fa-cogs"></i>
+      <span class="link-text">Soluciones</span>
+    </li>
+    <ul *ngIf="expanded && showSoluciones" class="submenu">
+      <li *ngFor="let s of soluciones" (click)="navigate(s.link)">
+        <span class="link-text">{{ s.label }}</span>
+      </li>
+    </ul>
+
+    <li (click)="toggleServicios()">
+      <i class="fas fa-tools"></i>
+      <span class="link-text">Servicios</span>
+    </li>
+    <ul *ngIf="expanded && showServicios" class="submenu">
+      <li *ngFor="let s of servicios" (click)="navigate(s.link)">
+        <span class="link-text">{{ s.label }}</span>
+      </li>
+    </ul>
+
+    <li (click)="navigate('quienes-somos')">
+      <i class="fas fa-users"></i>
+      <span class="link-text">¿Quiénes somos?</span>
+    </li>
+
+    <li (click)="navigate('contacto')">
+      <i class="fas fa-envelope"></i>
+      <span class="link-text">Contacto</span>
+    </li>
+  </ul>
+</div>
+

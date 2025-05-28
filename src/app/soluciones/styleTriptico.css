@@ -1,0 +1,116 @@
+.triptico-wrapper {
+  width: 1200px;
+  height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  perspective: 2500px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.triptico {
+  position: relative;
+  width: 1200px;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out;
+}
+
+.panel {
+  position: absolute;
+  width: 400px;
+  height: 100%;
+  top: 0;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transform-style: preserve-3d;
+  transition: transform 0.6s ease-in-out, opacity 0.4s ease-in-out;
+}
+
+.left   { left: 400px; transform-origin: right center; z-index: 1; }
+.center { left: 400px; z-index: 2; }
+.right  { left: 400px; transform-origin: left center;  z-index: 1; }
+
+/* --- ESTADOS DE TRANSICIÓN --- */
+
+/* Estado inicial: solo centro visible */
+.triptico.step-0 .left {
+  transform: rotateY(90deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.triptico.step-0 .right {
+  transform: rotateY(-90deg);
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Paso 1: abrir izquierda */
+.triptico.step-1 .left {
+  transform: translateX(-400px) rotateY(0deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Paso 2: abrir derecha */
+.triptico.step-2 .left {
+  transform: translateX(-400px);
+}
+.triptico.step-2 .right {
+  transform: translateX(400px) rotateY(0deg);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Paso 3: cerrar ambos */
+.triptico.step-3 .right {
+  transform: rotateY(-90deg);
+}
+.triptico.step-3 .left {
+  transform: rotateY(90deg);
+}
+
+/* Zoom de la animación */
+.zoom-out {
+  transform: translateZ(-800px) scale(0.6);
+}
+
+.zoom-in {
+  transform: translateZ(0px) scale(1);
+}
+
+/* Estilo visual */
+h2 {
+  color: #f0572d;
+  margin-top: 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f0572d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+
+

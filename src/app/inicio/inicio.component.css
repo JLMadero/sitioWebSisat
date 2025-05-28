@@ -1,0 +1,199 @@
+/* ====== RESETEO GENERAL ====== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ====== BODY ====== */
+body {
+  background: radial-gradient(ellipse at bottom, #1b004d 0%, #eeeeee 100%);
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Anton', sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* ====== PRELOADER ====== */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeOutPreloader 1s ease 2.5s forwards;
+}
+
+#logo {
+  width: 300px;
+  opacity: 0;
+  transform: scale(0.5);
+  animation: logoEnter 1.5s ease forwards;
+}
+
+@keyframes logoEnter {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeOutPreloader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+#main-content {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInContent 1s ease 3s forwards;
+}
+
+@keyframes fadeInContent {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== ENCABEZADO ====== */
+header {
+  background: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* ====== SECCIONES ====== */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background: transparent;
+  color: #fff;
+}
+
+.content-section {
+  padding: 4rem 2rem;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.content-section.dark-bg {
+  background: #222;
+  color: #fff;
+}
+
+/* ====== BOTONES ====== */
+.btn-primary {
+  background: #f25022;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-prototipo {
+  background-color: #f0572d;
+  color: #fff;
+  padding: 12px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: 'Roboto', sans-serif;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.btn-prototipo:hover {
+  background-color: #c9451d;
+}
+
+/* ====== FONDO ESTRELLAS ====== */
+.night {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+  pointer-events: none;
+}
+
+/* ====== ESTRELLAS FUGACES ====== */
+.shooting_star {
+  position: absolute;
+  height: 2px;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
+  animation: tail 3s ease-in-out infinite, shooting 3s ease-in-out infinite;
+}
+
+.shooting_star::before,
+.shooting_star::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  height: 2px;
+  width: 30px;
+  background: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  border-radius: 100%;
+  animation: shining 3s ease-in-out infinite;
+}
+
+.shooting_star::after {
+  transform: translateX(50%) rotateZ(-45deg);
+}
+
+.shooting_star::before {
+  transform: translateX(50%) rotateZ(45deg);
+}
+
+@keyframes tail {
+  0% { width: 0; }
+  30% { width: 100px; }
+  100% { width: 0; }
+}
+
+@keyframes shining {
+  0% { width: 0; }
+  50% { width: 30px; }
+  100% { width: 0; }
+}
+
+@keyframes shooting {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(300px); }
+}
