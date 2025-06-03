@@ -8,7 +8,7 @@
 
 /* ====== BODY ====== */
 body {
-  background: radial-gradient(ellipse at bottom, #1b004d 0%, #eeeeee 100%);
+  background: radial-gradient(ellipse at bottom, #1b004d 0%, #2763b1 100%);
   height: 100%;
   margin: 0;
   padding: 0;
@@ -65,135 +65,90 @@ body {
     transform: translateY(0);
   }
 }
-
-/* ====== ENCABEZADO ====== */
-header {
-  background: #fff;
-  padding: 1rem 2rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+.carousel-wrapper {
+  text-align: center;
+  margin-top: 80px;
 }
 
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 2rem;
+.carousel-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  margin-bottom: 30px;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
-header nav a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-/* ====== SECCIONES ====== */
-.hero-section {
-  height: 100vh;
+.carousel-container {
+  position: relative;
+  max-width: 1000px;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 4rem 2rem;
-  background: transparent;
-  color: #fff;
 }
 
-.content-section {
-  padding: 4rem 2rem;
-  background: #f4f4f4;
-  color: #333;
-}
-
-.content-section.dark-bg {
-  background: #222;
-  color: #fff;
-}
-
-/* ====== BOTONES ====== */
-.btn-primary {
-  background: #f25022;
-  border: none;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  font-weight: bold;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn-prototipo {
-  background-color: #f0572d;
-  color: #fff;
-  padding: 12px 20px;
-  font-weight: bold;
-  text-decoration: none;
-  border-radius: 5px;
-  font-family: 'Roboto', sans-serif;
-  transition: background 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.btn-prototipo:hover {
-  background-color: #c9451d;
-}
-
-/* ====== FONDO ESTRELLAS ====== */
-.night {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.carousel-slide {
+  position: relative;
   width: 100%;
-  height: 100%;
-  transform: rotateZ(45deg);
-  pointer-events: none;
+  max-width: 700px;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: block;
+  animation: fadeIn 1.2s ease;
 }
 
-/* ====== ESTRELLAS FUGACES ====== */
-.shooting_star {
+.carousel-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.carousel-slide:hover img {
+  transform: scale(1.07);
+}
+
+.caption {
   position: absolute;
-  height: 2px;
-  background: linear-gradient(-45deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  border-radius: 999px;
-  filter: drop-shadow(0 0 6px rgba(0, 0, 0, 0.7));
-  animation: tail 3s ease-in-out infinite, shooting 3s ease-in-out infinite;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  padding: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  font-family: 'Roboto', sans-serif;
 }
 
-.shooting_star::before,
-.shooting_star::after {
-  content: '';
-  position: absolute;
-  top: calc(50% - 1px);
-  right: 0;
-  height: 2px;
-  width: 30px;
-  background: linear-gradient(-45deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-  border-radius: 100%;
-  animation: shining 3s ease-in-out infinite;
+.nav {
+  font-size: 3rem;
+  background: none;
+  border: none;
+  color: white;
+  padding: 0 25px;
+  cursor: pointer;
+  z-index: 10;
+  user-select: none;
+  transition: color 0.3s ease;
 }
 
-.shooting_star::after {
-  transform: translateX(50%) rotateZ(-45deg);
+.nav:hover {
+  color: #f0572d;
 }
 
-.shooting_star::before {
-  transform: translateX(50%) rotateZ(45deg);
+/* Fade animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@keyframes tail {
-  0% { width: 0; }
-  30% { width: 100px; }
-  100% { width: 0; }
-}
 
-@keyframes shining {
-  0% { width: 0; }
-  50% { width: 30px; }
-  100% { width: 0; }
-}
 
-@keyframes shooting {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(300px); }
-}

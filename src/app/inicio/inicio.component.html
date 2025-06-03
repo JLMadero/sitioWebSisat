@@ -2,9 +2,26 @@
 
 <div id="preloader">
   <img src="assets/imgs/jpg negro.jpg" alt="Logo Empresa" id="logo">
-
 </div>
 
-<div style="position: absolute; top: 20px; right: 20px; z-index: 10000;">
-  <a routerLink="/prototipos/proto" class="btn-prototipo">Prototipo</a>
+<!-- Solo se muestra después del preload -->
+<div *ngIf="showContent" class="carousel-wrapper">
+  <h2 class="carousel-title">Conoce más de nuestros proyectos:</h2>
+
+  <div class="carousel-container">
+    <button class="nav left" (click)="prev()">‹</button>
+
+    <a [routerLink]="soluciones[currentIndex].link"
+       class="carousel-slide"
+       [@fadeInOut]>
+      <img [src]="soluciones[currentIndex].img" [alt]="soluciones[currentIndex].label">
+      <div class="caption">{{ soluciones[currentIndex].label }}</div>
+    </a>
+
+    <button class="nav right" (click)="next()">›</button>
+  </div>
 </div>
+
+
+
+
