@@ -1,0 +1,20 @@
+<div class="carousel-wrapper" *ngIf="showContent">
+  <h2 class="carousel-title">Conoce más de nuestros proyectos:</h2>
+
+  <div class="carousel-slider">
+    <button class="nav nav-left" (click)="slideIndex = (slideIndex - 1 + slides.length) % slides.length">‹</button>
+
+    <div class="carrusel-slide-multiple">
+      <div class="card-solucion" *ngFor="let item of slides[slideIndex]">
+        <img [src]="item.img" class="card-img" />
+        <h3>{{ item.label }}</h3>
+        <p>{{ item.desc }}</p>
+        <a [routerLink]="item.link" class="btn-vermas">Ver más</a>
+      </div>
+    </div>
+
+    <button class="nav nav-right" (click)="slideIndex = (slideIndex + 1) % slides.length">›</button>
+  </div>
+</div>
+
+

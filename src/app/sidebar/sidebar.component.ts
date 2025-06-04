@@ -1,21 +1,15 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { Router } from '@angular/router';
+import { CommonModule, NgFor } from '@angular/common';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-sidebar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule, NgFor],
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent {
-  // ✅ Estas eran las propiedades faltantes
-  expanded = false;
-  showSoluciones = false;
-  showServicios = false;
-
-  // ✅ Estas listas también eran necesarias
   soluciones = [
     { label: 'Cámaras móviles', link: 'soluciones/camaras' },
     { label: 'GPS', link: 'soluciones/gps' },
@@ -29,43 +23,24 @@ export class SidebarComponent {
   ];
 
   servicios = [
-  { label: 'Paroute-Agilidad en tus rutas', link: "https://webapp.paroute.com/" },
-  { label: 'Jigsaw', link: "https://mstwebsis.mstrack.com/login" },
-  { label: 'MsTrack', link: "http://sisat.io/" },
-  { label: 'Sisat.io', link: "https://fuel.jigsawm2m.com/Unsecured/Login.aspx" }
-];
-
+    { label: 'Paroute-Agilidad en tus rutas', link: "https://webapp.paroute.com/", external: true },
+    { label: 'Jigsaw', link: "https://mstwebsis.mstrack.com/login", external: true },
+    { label: 'MsTrack', link: "http://sisat.io/", external: true },
+    { label: 'Sisat.io', link: "https://fuel.jigsawm2m.com/Unsecured/Login.aspx", external: true }
+  ];
 
   constructor(private router: Router) {}
 
-  toggleSidebar() {
-    this.expanded = !this.expanded;
-
-    // Al cerrar, ocultamos también los submenús
-    if (!this.expanded) {
-      this.showSoluciones = false;
-      this.showServicios = false;
+  navigate(path: string, external = false) {
+    if (external) {
+      window.open(path, '_blank');
+    } else {
+      this.router.navigate([path]);
     }
-    
-  }
-
-  toggleSoluciones() {
-    this.showSoluciones = !this.showSoluciones;
-  }
-
-  toggleServicios() {
-    this.showServicios = !this.showServicios;
-  }
-
-  navigate(link: string) {
-  if (link.startsWith('http')) {
-    window.open(link, '_blank');
-  } else {
-    this.router.navigateByUrl(link);
   }
 }
 
-}
+
 
 
 

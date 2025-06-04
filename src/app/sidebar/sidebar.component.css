@@ -1,64 +1,59 @@
-.sidebar-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  background-color: #010101;
-  color: white;
-  width: 60px;
-  transition: width 0.3s ease;
-  z-index: 1000;
-  overflow-x: hidden;
-  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+.navbar {
+  background-color: #ffffffee;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
 }
 
-.sidebar-container.expanded {
-  width: 240px;
+.nav-link {
+  color: #010101;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1rem;
+  position: relative;
+  background-image: linear-gradient(to right, #EC2227, #FF500A);
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  transition: background-size 0.3s ease, color 0.3s ease;
+  cursor: pointer;
 }
 
-.sidebar-toggle {
-  background-color: transparent;
+.nav-link:hover {
+  color: #EC2227;
+  background-size: 100% 2px;
+}
+
+.dropdown-menu {
+  animation: fadeSlide 0.3s ease;
+  transform-origin: top;
   border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 12px;
-  transition: transform 0.3s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
-.sidebar-list {
-  list-style: none;
-  padding: 0;
-  margin-top: 30px;
+.dropdown-item {
+  font-size: 0.95rem;
+  padding: 0.5rem 1rem;
+  color: #333;
 }
 
-.sidebar-list li {
-  padding: 12px 20px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.2s ease;
+.dropdown-item:hover {
+  background-color: #f0f0f0;
+  color: #EC2227;
 }
 
-.sidebar-list li:hover {
-  background-color: #EC2227;
+@keyframes fadeSlide {
+  0% {
+    transform: scaleY(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleY(1);
+    opacity: 1;
+  }
 }
 
-.sidebar-list li i {
-  margin-right: 10px;
-  font-size: 18px;
-}
 
-.link-text {
-  white-space: nowrap;
-  overflow: hidden;
-  opacity: 0;
-  transition: opacity 0.2s ease;
-}
 
-.sidebar-container.expanded .link-text {
-  opacity: 1;
-  margin-left: 10px;
-}
     
 

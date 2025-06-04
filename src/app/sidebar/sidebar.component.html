@@ -1,43 +1,51 @@
-<div class="sidebar-container" [class.expanded]="expanded">
-  <button class="sidebar-toggle" (click)="toggleSidebar()">
-    ☰
-  </button>
+<header class="sticky-top">
+  <nav class="navbar navbar-expand-lg bg-light py-4 shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']">
+        <img src="assets/imgs/png negro.png" alt="SISAT Logo" class="img-fluid" style="max-width: 160px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarContent" aria-controls="navbarContent"
+              aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <ul class="sidebar-list">
-    <li (click)="navigate('')">
-      <i class="fas fa-home"></i>
-      <span class="link-text">Inicio</span>
-    </li>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigate('')">Inicio</a>
+          </li>
 
-    <li (click)="toggleSoluciones()">
-      <i class="fas fa-cogs"></i>
-      <span class="link-text">Soluciones</span>
-    </li>
-    <ul *ngIf="expanded && showSoluciones" class="submenu">
-      <li *ngFor="let s of soluciones" (click)="navigate(s.link)">
-        <span class="link-text">{{ s.label }}</span>
-      </li>
-    </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Soluciones</a>
+            <ul class="dropdown-menu">
+              <li *ngFor="let s of soluciones">
+                <a class="dropdown-item" (click)="navigate(s.link)">{{ s.label }}</a>
+              </li>
+            </ul>
+          </li>
 
-    <li (click)="toggleServicios()">
-      <i class="fas fa-tools"></i>
-      <span class="link-text">Servicios</span>
-    </li>
-    <ul *ngIf="expanded && showServicios" class="submenu">
-      <li *ngFor="let s of servicios" (click)="navigate(s.link)">
-        <span class="link-text">{{ s.label }}</span>
-      </li>
-    </ul>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Servicios</a>
+            <ul class="dropdown-menu">
+              <li *ngFor="let s of servicios">
+                <a class="dropdown-item" (click)="navigate(s.link, s.external)">{{ s.label }}</a>
+              </li>
+            </ul>
+          </li>
 
-    <li (click)="navigate('quienes-somos')">
-      <i class="fas fa-users"></i>
-      <span class="link-text">¿Quiénes somos?</span>
-    </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigate('quienes-somos')">¿Quiénes somos?</a>
+          </li>
 
-    <li (click)="navigate('contacto')">
-      <i class="fas fa-envelope"></i>
-      <span class="link-text">Contacto</span>
-    </li>
-  </ul>
-</div>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigate('contacto')">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
 

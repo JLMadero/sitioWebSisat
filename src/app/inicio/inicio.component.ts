@@ -2,13 +2,17 @@ import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { ClientesGafeteComponent } from '../clientes-gafete/clientes-gafete.component';
+import { EmpresasTrenComponent } from '../empresas-tren/empresas-tren.component';
+import { CarruselProyectosComponent } from '../carrusel-proyectos/carrusel-proyectos.component';
+
 
 
 
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [CommonModule, RouterModule],
+  imports: [CommonModule, RouterModule, ClientesGafeteComponent, EmpresasTrenComponent, CarruselProyectosComponent],
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
   animations: [

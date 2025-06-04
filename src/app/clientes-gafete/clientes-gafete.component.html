@@ -1,0 +1,24 @@
+<div class="credencial-wrapper">
+  <div class="gafete" [class.volteado]="cliente.volteado">
+    <div class="cara frente">
+      <div class="foto-container">
+        <img [src]="cliente.foto" class="foto" alt="Foto" />
+      </div>
+      <h4>{{ cliente.nombre }}</h4>
+      <p class="cargo">{{ cliente.cargo }}</p>
+      <img [src]="cliente.logo" class="logo-empresa" alt="Logo empresa" />
+    </div>
+    <div class="cara reverso">
+      <p class="testimonio">“{{ cliente.testimonio }}”</p>
+    </div>
+  </div>
+
+  <div class="controles">
+    <button (click)="anterior()">←</button>
+    <button (click)="cliente.volteado = !cliente.volteado">🔁</button>
+    <button (click)="siguiente()">→</button>
+  </div>
+</div>
+
+
+

@@ -1,0 +1,38 @@
+.tren-wrapper {
+  overflow: hidden;
+  width: 100%;
+  padding: 3rem 0;
+  background-color: #fafafa;
+}
+
+.tren-contenido {
+  display: flex;
+  gap: 120px;
+  animation-name: scrollLoop;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+.tren-contenido img {
+  height: 100px;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: transform 0.3s, filter 0.3s;
+}
+
+.tren-contenido img:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+}
+
+@keyframes scrollLoop {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
