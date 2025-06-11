@@ -1,1 +1,82 @@
+.contacto-interactivo {
+  position: relative;
+  background: linear-gradient(135deg, #7a0f0f, #550a0a);
+  color: #fff;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
 
+.contacto-bg {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://assets-global.website-files.com/6232306ca08bd3a533aa9faf/6232306da08bd3562faaa283_MAPA.svg');
+  background-repeat: no-repeat;
+  background-position: center left;
+  background-size: 50%;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.contenedor-formulario {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 2.5rem;
+  max-width: 520px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 5%;
+  z-index: 2;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: #333;
+  position: relative;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.campos-form mat-form-field {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.boton-enviar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #EC2227;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.boton-enviar:hover {
+  background: #ff3a36;
+}
+
+.info-contacto {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+  color: #555;
+  flex-wrap: wrap;
+  gap: 1rem;
+}

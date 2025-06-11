@@ -1,17 +1,20 @@
 .tren-wrapper {
   overflow: hidden;
   width: 100%;
+  background: #fafafa;
   padding: 3rem 0;
-  background-color: #fafafa;
 }
 
 .tren-contenido {
   display: flex;
+  width: max-content;
+  animation: scrollLoop 20s linear infinite;
+}
+
+.logos-loop {
+  display: flex;
   gap: 120px;
-  animation-name: scrollLoop;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  will-change: transform;
+  padding-right: 100px;
 }
 
 .tren-contenido img {
@@ -28,11 +31,16 @@
 
 @keyframes scrollLoop {
   from {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
+
+.tren-contenido:hover {
+  animation-play-state: paused;
+}
+
 
 

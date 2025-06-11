@@ -1,11 +1,15 @@
 <div class="tren-wrapper">
-  <div class="tren-contenido" [ngStyle]="{ animationDuration: duracion + 's' }">
-    <img *ngFor="let empresa of empresas"
-         [src]="empresa.logo"
-         alt="Empresa"
-         (click)="abrirEnlace($event, empresa.url)" />
+  <div class="tren-contenido">
+    <div class="logos-loop">
+      <img *ngFor="let empresa of empresas" [src]="empresa.logo" alt="Logo" (click)="abrirEnlace($event, empresa.url)">
+    </div>
+    <div class="logos-loop">
+      <img *ngFor="let empresa of empresas" [src]="empresa.logo" alt="Logo" (click)="abrirEnlace($event, empresa.url)">
+    </div>
   </div>
 </div>
+
+
 
 
 

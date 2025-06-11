@@ -1,1 +1,42 @@
-<p>contacto works!</p>
+<section class="contacto-interactivo">
+  <div class="contacto-bg">
+    <div class="overlay"></div>
+    <div class="contenedor-formulario centrado">
+      <form [formGroup]="form" (ngSubmit)="onSubmit()">
+        <h2>¡Conversemos!</h2>
+        <p>Comparte tus datos y recibe una respuesta personalizada en menos de 24 horas.</p>
+
+        <div class="campos-form">
+          <mat-form-field appearance="outline">
+            <mat-label>Nombre completo*</mat-label>
+            <input matInput formControlName="name">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Correo electrónico*</mat-label>
+            <input matInput formControlName="email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline">
+            <mat-label>Teléfono</mat-label>
+            <input matInput formControlName="phone">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="mensaje">
+            <mat-label>Mensaje*</mat-label>
+            <textarea matInput formControlName="message" rows="4"></textarea>
+          </mat-form-field>
+        </div>
+
+        <button type="submit" class="boton-enviar">
+          Enviar mensaje
+        </button>
+
+        <div class="info-contacto">
+          <p><i class="bi bi-telephone"></i> +52 81 1022 2869</p>
+          <p><i class="bi bi-envelope"></i> ventas&#64;sisat.com.mx</p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

@@ -27,8 +27,13 @@ export class EmpresasTrenComponent implements AfterViewInit {
     event.stopPropagation();
     window.open(url, '_blank');
   }
+  get empresasRepetidas() {
+  return [...this.empresas, ...this.empresas];
+}
+  
 
   ngAfterViewInit() {
+    
     // Estimar duración de animación: tiempo proporcional a ancho
     setTimeout(() => {
       const totalWidth = this.contenedor.nativeElement.scrollWidth;
