@@ -1,35 +1,24 @@
-<section class="hero-nosotros">
-  <img src="assets/imgs/about.us.1.jpg" alt="Oficina SISAT" class="fondo-img" />
-  <div class="hero-overlay">
-    <h1>Innovación constante</h1>
-    <p>
-      En SISAT desarrollamos software que permite a nuestros clientes simplificar y mejorar su operación de última milla.
-    </p>
-  </div>
-</section>
+<div class="hero-wrapper">
+  <app-hero-quienes></app-hero-quienes>
+</div>
 
-<section class="historia">
-  <div class="historia-contenido">
-    <img src="assets/imgs/sisat.svg" alt="Logo SISAT" class="logo-central" />
-    <div>
-      <p>
-        Co-fundada en 2008, <strong class="rojo">SISAT</strong> nace con el objetivo de ayudar a las empresas a controlar y administrar la logística de distribución.
-        Con poco más de <strong class="rojo">15 años en el mercado</strong>, conocemos muy bien las necesidades de nuestros clientes y por eso ofrecemos soluciones de manera integral.
-      </p>
-      <p>
-        A partir del 2017 <strong class="rojo">desarrollamos nuestro software</strong> para atender el cambio en el mercado que demanda productos a la puerta de casas y negocios.
-      </p>
-      <p>
-        En <strong class="rojo">SISAT</strong> seguimos construyendo nuestra historia con clientes, colaboradores y aliados.
-      </p>
-    </div>
-  </div>
-</section>
+<div class="section-container" [class.visible]="isHistoriaVisible" #historiaSection>
+  <app-historia-sisat></app-historia-sisat>
+</div>
 
-<section class="diferenciador">
-  <img src="assets/imgs/about.us.3.svg" alt="Soluciones SISAT" class="fondo-img" />
-  <div class="diferenciador-overlay">
-    <h2>Diferentes Soluciones, mismo compromiso</h2>
-    <p>El compromiso y el servicio son valores centrales en nuestra cultura.</p>
-  </div>
-</section>
+<div class="section-container" [class.visible]="isValoresVisible" #valoresSection>
+  <app-valores-sisat></app-valores-sisat>
+</div>
+<div class="section-container" [class.visible]="isCarruselVisible" #carruselSection>
+  <section class="soluciones-mini-scroll">
+    <h2>Conoce más de nuestros proyectos</h2>
+    <app-carrusel-proyectos></app-carrusel-proyectos>
+  </section>
+</div>
+
+
+
+<div class="section-container" [class.visible]="isAliadosVisible" #aliadosSection>
+  <app-aliados-sisat></app-aliados-sisat>
+</div>
+

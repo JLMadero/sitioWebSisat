@@ -1,0 +1,10 @@
+<section class="aliados">
+  <h2>Rodeados de los mejores</h2>
+  <p>Colaboramos orgullosamente con expertos de talla mundial.</p>
+  <div class="logos">
+    <a *ngFor="let aliado of aliados" [href]="aliado.link" target="_blank" rel="noopener">
+      <img [src]="aliado.img" alt="Aliado">
+    </a>
+  </div>
+</section>
+

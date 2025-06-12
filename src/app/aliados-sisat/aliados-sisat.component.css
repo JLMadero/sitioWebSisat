@@ -1,0 +1,33 @@
+.aliados {
+  background: linear-gradient(to bottom, #f4f4f4, #fff);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  gap: 4rem; /* antes era 2rem */
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.logos img {
+  height: 80px;
+  transition: transform 0.3s ease;
+  padding: 0 1rem; /* Espacio horizontal adicional */
+}
+
+.logos img:hover {
+  transform: scale(1.1);
+}
+.logos a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.logos a:hover {
+  transform: scale(1.1);
+}
+
+
