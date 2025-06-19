@@ -1,0 +1,10 @@
+<section class="valor-paroute">
+  <h2>¿Por qué elegir Paroute?</h2>
+  <div class="grid-valores">
+    <div class="valor-card" *ngFor="let valor of valores">
+      <img [src]="valor.icono" [alt]="valor.titulo" />
+      <h3>{{ valor.titulo }}</h3>
+      <p>{{ valor.texto }}</p>
+    </div>
+  </div>
+</section>

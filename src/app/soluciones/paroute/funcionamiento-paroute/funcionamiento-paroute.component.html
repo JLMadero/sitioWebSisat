@@ -1,0 +1,20 @@
+<section class="funcionamiento">
+  <h2>¿Cómo funciona Paroute?</h2>
+  <div class="pasos">
+    <div 
+      class="paso" 
+      *ngFor="let paso of pasos; let i = index"
+      [ngClass]="{ 'respirando': pasoActivo === i }"
+    >
+      <div class="icono">
+        <img [src]="paso.icono" [alt]="paso.titulo">
+      </div>
+      <div class="contenido">
+        <h3>{{ paso.titulo }}</h3>
+        <p>{{ paso.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+

@@ -1,0 +1,115 @@
+.paroute-hero {
+    position: relative;
+    height: 91vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background-color: #f5f5f5;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5);
+}
+
+/* Caja central estilo glass */
+.glass-box {
+    position: relative;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 3rem;
+    text-align: center;
+    color: #fff;
+    max-width: 720px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.glass-box h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.glass-box h1 span {
+    color: #EC2227;
+}
+
+.glass-box p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.btn-cta {
+    background: #EC2227;
+    padding: 0.8rem 1.5rem;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+    background: #ff3a36;
+}
+
+/* Flechas grandes laterales */
+.flecha {
+    position: absolute;
+    font-size: 6rem;
+    color: white;
+    animation: bajar 1.5s infinite ease-in-out;
+    z-index: 2;
+}
+
+.flecha.izquierda {
+    bottom: 3rem;
+    left: 2rem;
+}
+
+.flecha.derecha {
+    bottom: 3rem;
+    right: 2rem;
+}
+
+@keyframes bajar {
+    0% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 0.3;
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .glass-box {
+        padding: 2rem;
+    }
+
+    .glass-box h1 {
+        font-size: 2rem;
+    }
+
+    .flecha {
+        font-size: 2rem;
+    }
+}

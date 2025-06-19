@@ -1,0 +1,38 @@
+.valor-paroute {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.valor-paroute h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.grid-valores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.valor-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.valor-card:hover {
+  transform: translateY(-6px);
+}
+
+.valor-card img {
+  width: 60px;
+  height: 60px;  /* fuerza misma altura para todos */
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+

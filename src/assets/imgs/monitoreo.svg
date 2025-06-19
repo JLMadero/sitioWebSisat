@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="307px" height="262px" viewBox="0 0 307 262" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 16</title>
+    <defs>
+        <linearGradient x1="17.609647%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#ECF2FA" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#ECF2FA" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-20.7%" y="-95.7%" width="141.5%" height="291.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="15" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <path d="M158.155458,0.149273437 L158.155458,98.6184766 C158.155458,100.876174 157.038169,103.131862 154.806104,104.422047 L154.806104,104.422047 L80.4578802,147.345448 C76.0053099,149.917273 70.519888,149.917273 66.0668151,147.345448 L66.0668151,147.345448 L3.45942448,111.199161 C1.22534896,109.909479 0.110070313,107.653289 0.110070313,105.395591 L0.110070313,105.395591 L0.110070313,6.92638802 L158.155458,0.149273437 Z" id="path-3"></path>
+        <linearGradient x1="32.2440097%" y1="61.3765823%" x2="43.7956624%" y2="61.3765823%" id="linearGradient-5">
+            <stop stop-color="#CC8241" offset="0%"></stop>
+            <stop stop-color="#DEA860" offset="100%"></stop>
+        </linearGradient>
+        <path d="M92.1967031,1.92798958 L154.806104,38.0762865 C159.270737,40.6541432 159.270737,47.0995391 154.806104,49.6773958 L80.4598906,92.6028073 C76.0053099,95.1726224 70.519888,95.1726224 66.0668151,92.6028073 L3.45942448,56.4545104 C-1.00721875,53.8766536 -1.00721875,47.4312578 3.45942448,44.853401 L77.805638,1.92798958 C82.2582083,-0.641825521 87.7436302,-0.641825521 92.1967031,1.92798958 Z" id="path-6"></path>
+        <linearGradient x1="20.2874697%" y1="11.3291139%" x2="61.3234169%" y2="35.6547898%" id="linearGradient-8">
+            <stop stop-color="#DEA860" offset="0%"></stop>
+            <stop stop-color="#EBCA9F" offset="100%"></stop>
+        </linearGradient>
+        <path d="M29.0213698,4.9335625 C37.6209271,-0.547838542 45.4700964,-0.783559896 51.1831979,3.17645833 L51.1831979,3.17645833 L63.0491797,10.0284609 L38.0034089,113.90468 L26.1002344,107.033076 C25.6720156,106.803385 25.2774714,106.471667 24.9316797,106.029878 L24.9316797,106.029878 L5.72717448,81.4731406 L5.73069271,81.465099 C2.14209896,76.6923698 0.104039062,69.4694453 0.322169271,60.2888776 C0.824773437,39.1895547 13.4210391,14.8795964 29.0213698,4.9335625 Z" id="path-9"></path>
+        <linearGradient x1="75.3457937%" y1="61.1581888%" x2="85.9321621%" y2="42.331419%" id="linearGradient-11">
+            <stop stop-color="#AB2C37" offset="0%"></stop>
+            <stop stop-color="#FF7985" offset="100%"></stop>
+        </linearGradient>
+        <path d="M29.2002969,4.66265885 C46.4632422,-6.34336719 60.7050339,3.7871224 60.7050339,26.5772057 C60.7050339,35.1275078 58.6966276,44.2055443 55.2784167,52.689 L55.2784167,52.689 L55.2844479,52.6910104 L36.0794401,99.4251563 C33.383974,105.980622 27.8040625,109.202315 25.1106068,105.756964 L25.1106068,105.756964 L5.90358854,81.2002266 L5.90961979,81.1921849 C2.31851302,76.4214661 0.282463542,69.1965313 0.50059375,60.017974 C1.00319792,38.918651 13.5999661,14.6086927 29.2002969,4.66265885 Z" id="path-12"></path>
+        <linearGradient x1="66.9793934%" y1="70.0696591%" x2="104.21801%" y2="47.9943348%" id="linearGradient-14">
+            <stop stop-color="#FF4656" offset="0%"></stop>
+            <stop stop-color="#FF7985" offset="100%"></stop>
+        </linearGradient>
+        <path d="M20.2770625,2.6055 C25.1774531,-0.223658854 29.6692266,-0.489033854 33.1658438,1.36457031 L33.1658438,1.36457031 L42.0242422,6.46298698 L15.2273984,62.2148568 L7.13446615,57.5421458 L7.13848698,57.5366172 C2.82513802,55.0899401 0.0884583333,49.3512057 0.0884583333,41.1783594 C0.0884583333,26.3123333 9.12729167,9.04285417 20.2770625,2.6055 Z" id="path-15"></path>
+        <linearGradient x1="81.7143952%" y1="53.4224098%" x2="85.9021018%" y2="45.974957%" id="linearGradient-17">
+            <stop stop-color="#C5B9EB" offset="0%"></stop>
+            <stop stop-color="#D6D1EB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="P--Características" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Paroute-Características" transform="translate(-542.000000, -1833.000000)">
+            <g id="Group-16" transform="translate(587.000000, 1833.000000)">
+                <ellipse id="Oval-Copy-2" fill="url(#linearGradient-1)" opacity="0.8" filter="url(#filter-2)" cx="108.5" cy="193.5" rx="108.5" ry="23.5"></ellipse>
+                <g id="010-pickup" transform="translate(38.000000, 0.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 43.726562)">
+                        <mask id="mask-4" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <polygon id="Fill-1" fill="url(#linearGradient-5)" mask="url(#mask-4)" points="0.03015625 149.243281 187.973958 149.243281 187.973958 -43.7265625 0.03015625 -43.7265625"></polygon>
+                    </g>
+                    <g id="Group-6">
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <g id="Clip-5"></g>
+                        <polygon id="Fill-4" fill="url(#linearGradient-8)" mask="url(#mask-7)" points="0.03015625 192.969844 187.973958 192.969844 187.973958 0 0.03015625 0"></polygon>
+                    </g>
+                    <polygon id="Fill-7" fill="#DEA861" points="27.5648229 30.9337786 107.41807 77.0376589 128.59982 64.8082943 48.7465729 18.7044141"></polygon>
+                    <polygon id="Fill-8" fill="#CC8241" points="40.2259245 23.618375 120.077161 69.7227578 115.928667 72.1176667 36.0754193 26.0137865"></polygon>
+                    <polygon id="Fill-9" fill="#CC8241" points="107.41807 77.0376589 107.41807 94.5307969 128.59982 82.3014323 128.59982 64.8082943"></polygon>
+                    <g id="Group-12" transform="translate(115.598958, 55.789062)">
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <g id="Clip-11"></g>
+                        <polygon id="Fill-10" fill="url(#linearGradient-11)" mask="url(#mask-10)" points="-115.568802 137.180781 72.375 137.180781 72.375 -55.7890625 -115.568802 -55.7890625"></polygon>
+                    </g>
+                    <g id="Group-15" transform="translate(127.158854, 62.825521)">
+                        <mask id="mask-13" fill="white">
+                            <use xlink:href="#path-12"></use>
+                        </mask>
+                        <g id="Clip-14"></g>
+                        <polygon id="Fill-13" fill="url(#linearGradient-14)" mask="url(#mask-13)" points="-127.128698 130.144323 60.8151042 130.144323 60.8151042 -62.8255208 -127.128698 -62.8255208"></polygon>
+                    </g>
+                    <g id="Group-18" transform="translate(137.713542, 77.401042)">
+                        <mask id="mask-16" fill="white">
+                            <use xlink:href="#path-15"></use>
+                        </mask>
+                        <g id="Clip-17"></g>
+                        <polygon id="Fill-16" fill="url(#linearGradient-17)" mask="url(#mask-16)" points="-137.683385 115.568802 50.2604167 115.568802 50.2604167 -77.4010417 -137.683385 -77.4010417"></polygon>
+                    </g>
+                    <path d="M178.497357,83.2654271 C187.404508,87.0605911 189.187245,102.904182 182.478484,118.651776 C175.768216,134.39937 163.106612,144.086562 154.197451,140.291398 C145.289797,136.494224 143.505049,120.652643 150.21582,104.905049 C156.926591,89.1574557 169.587693,79.4682526 178.497357,83.2654271 Z" id="Fill-19" fill="#F2EFFA"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
