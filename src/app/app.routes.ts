@@ -4,6 +4,7 @@ import { ContactoComponent } from './contacto/contacto.component';
 import { QuienesSomosComponent } from './quienes-somos/quienes-somos.component';
 import { SolucionesComponent } from './soluciones/soluciones.component';
 import { ServiciosComponent } from './servicios/servicios.component';
+import { PoliticaPrivacidadComponent } from './politica-privacidad/politica-privacidad.component';
 
 export const routes: Routes = [
   { path: '', component: InicioComponent },
@@ -11,6 +12,7 @@ export const routes: Routes = [
   { path: 'quienes-somos', component: QuienesSomosComponent },
   { path: 'soluciones', component: SolucionesComponent },
   { path: 'servicios', component: ServiciosComponent },
+  { path: 'politica-privacidad', component: PoliticaPrivacidadComponent},
 
   // Subrutas de Soluciones (Trípticos)
   {
@@ -36,6 +38,18 @@ export const routes: Routes = [
   {
     path: 'soluciones/territory',
     loadComponent: () => import('./soluciones/territory/territory.component').then(m => m.TerritoryComponent)
+  },
+  {
+    path: 'soluciones/rastreo-satelital',
+    loadComponent: () => import('./soluciones/rastreo-satelital/rastreo-satelital.component').then(m => m.RastreoSatelitalComponent)
+  },
+  {
+    path: 'soluciones/ultima-milla',
+    loadComponent: () => import('./soluciones/ultima-milla/ultima-milla.component').then(m => m.UltimaMillaComponent)
+  },
+  {
+    path: 'soluciones/control-fluidos',
+    loadComponent: () => import('./soluciones/control-fluidos/control-fluidos.component').then(m => m.ControlFluidosComponent)
   }
 ];
 

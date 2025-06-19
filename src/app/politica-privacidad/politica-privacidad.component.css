@@ -1,0 +1,35 @@
+.politica-container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 3rem 2rem;
+  font-family: 'Roboto', sans-serif;
+  color: #222;
+}
+
+.politica-container h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.politica-container .update {
+  font-weight: bold;
+  color: #555;
+}
+
+.politica-container h2 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #111;
+}
+
+.politica-container p,
+.politica-container li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+hr {
+  margin: 2rem 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}

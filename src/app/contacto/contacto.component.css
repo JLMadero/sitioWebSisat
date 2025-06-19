@@ -10,13 +10,15 @@
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   min-height: 100vh;
   background-image: url('https://assets-global.website-files.com/6232306ca08bd3a533aa9faf/6232306da08bd3562faaa283_MAPA.svg');
   background-repeat: no-repeat;
   background-position: center left;
   background-size: 50%;
+  padding-top: 1rem; /* más pequeño */
 }
+
 
 .overlay {
   position: absolute;
@@ -37,6 +39,7 @@
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
   color: #333;
   position: relative;
+  margin-top: -0.5rem;
 }
 
 h2 {

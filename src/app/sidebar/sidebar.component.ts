@@ -13,8 +13,8 @@ export class SidebarComponent {
   soluciones = [
     { label: 'Cámaras móviles', link: 'soluciones/camaras' },
     { label: 'GPS', link: 'soluciones/gps' },
-    { label: 'Control de fluidos', link: 'soluciones/fluidos' },
-    { label: 'Rastreo satelital', link: 'soluciones/rastreo' },
+    { label: 'Control de fluidos', link: 'soluciones/control-fluidos' },
+    { label: 'Rastreo satelital', link: 'soluciones/rastreo-satelital' },
     { label: 'App móvil', link: 'soluciones/app' },
     { label: 'Última milla', link: 'soluciones/ultima-milla' },
     { label: 'Paroute', link: 'soluciones/paroute' },
@@ -24,12 +24,12 @@ export class SidebarComponent {
 
   servicios = [
     { label: 'Paroute-Agilidad en tus rutas', link: "https://webapp.paroute.com/", external: true },
-    { label: 'Jigsaw', link: "https://mstwebsis.mstrack.com/login", external: true },
-    { label: 'MsTrack', link: "http://sisat.io/", external: true },
-    { label: 'Sisat.io', link: "https://fuel.jigsawm2m.com/Unsecured/Login.aspx", external: true }
+    { label: 'Jigsaw', link: "https://fuel.jigsawm2m.com/Unsecured/Login.aspx", external: true },
+    { label: 'MsTrack', link: "https://mstwebsis.mstrack.com/login", external: true },
+    { label: 'Sisat.io', link: "http://sisat.io/", external: true }
   ];
 
-  constructor(private router: Router) {}
+  constructor(private router: Router) { }
 
   navigate(path: string, external = false) {
     if (external) {
@@ -38,6 +38,8 @@ export class SidebarComponent {
       this.router.navigate([path]);
     }
   }
+  
+
 }
 
 
