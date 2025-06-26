@@ -1,0 +1,16 @@
+<section class="beneficios-camaras">
+  <h2>Beneficios de las cámaras móviles</h2>
+  <div class="tarjetas">
+    <div
+      *ngFor="let beneficio of beneficios; let i = index"
+      class="tarjeta"
+      [class.visible]="visibles[i]"
+    >
+      <div class="icono">{{ beneficio.icono }}</div>
+      <h3>{{ beneficio.titulo }}</h3>
+      <p>{{ beneficio.descripcion }}</p>
+    </div>
+  </div>
+</section>
+
+

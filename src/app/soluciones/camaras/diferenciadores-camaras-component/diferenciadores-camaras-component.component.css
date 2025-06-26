@@ -1,0 +1,59 @@
+.diferenciadores-camaras {
+  padding: 4rem 2rem;
+  background-color: #fdfdfd;
+  text-align: center;
+}
+
+.diferenciadores-camaras h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2.5rem;
+  color: #EC2227;
+  font-weight: bold;
+}
+
+.grid-diferenciadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  padding: 2rem;
+  max-width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+  animation: flotar 3s ease-in-out infinite;
+  border: 2px solid transparent; /* necesario para la transición */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.2);
+  border: 2px solid #EC2227;
+}
+
+
+@keyframes flotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
+
+.emoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}

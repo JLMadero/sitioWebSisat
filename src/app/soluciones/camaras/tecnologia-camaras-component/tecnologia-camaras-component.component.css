@@ -1,0 +1,116 @@
+.tecnologia-dashboard {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #fafafa, #fff);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.tecnologia-dashboard h2 {
+  font-size: 2.3rem;
+  color: #EC2227;
+  margin-bottom: 2.5rem;
+}
+
+.dashboard-container {
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  min-width: 220px;
+}
+
+.sidebar button {
+  padding: 0.8rem 1rem;
+  border: none;
+  background: #eee;
+  border-radius: 8px;
+  text-align: left;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sidebar button:hover {
+  background: #ddd;
+}
+
+.sidebar button.active {
+  background: #EC2227;
+  color: white;
+}
+
+.panel-detalle {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2rem 2rem;
+  flex: 1;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  animation: fadeIn 0.4s ease-in-out;
+  min-height: 200px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contenido-icono {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.icono-grande {
+  font-size: 3.5rem;
+  color: #4a1c40;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.texto-info h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #EC2227;
+  font-weight: 600;
+}
+
+.texto-info p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 550px;
+}
+
+.panel-detalle h3 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #EC2227;
+  font-weight: 600;
+}
+
+.panel-detalle p {
+  font-size: 1.05rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+
+

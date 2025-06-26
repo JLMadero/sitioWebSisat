@@ -1,0 +1,27 @@
+<section class="tecnologia-dashboard">
+  <h2>Tecnología destacada</h2>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <button
+        *ngFor="let item of tecnologia; let i = index"
+        [class.active]="i === seleccionado"
+        (click)="seleccionar(i)">
+        {{ item.title }}
+      </button>
+    </div>
+
+    <div class="panel-detalle">
+        <div class="contenido-icono">
+      <div class="icono-grande">{{ tecnologia[seleccionado].icon }}</div>
+      <div class="texto-info">
+      <h3>{{ tecnologia[seleccionado].title }}</h3>
+      <p>{{ tecnologia[seleccionado].desc }}</p>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+

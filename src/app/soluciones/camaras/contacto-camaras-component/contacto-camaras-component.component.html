@@ -1,0 +1,16 @@
+<section class="testimonios-camaras">
+  <h2>Lo que opinan nuestros clientes</h2>
+  <div class="contenedor-testimonios">
+    <div class="testimonio" *ngFor="let testimonio of testimonios">
+      <p class="mensaje">“{{ testimonio.mensaje }}”</p>
+      <div class="cliente">
+        <img src="assets/imgs/prueba.png" alt="Avatar" />
+        <div>
+          <strong>{{ testimonio.nombre }}</strong>
+          <p>{{ testimonio.empresa }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
