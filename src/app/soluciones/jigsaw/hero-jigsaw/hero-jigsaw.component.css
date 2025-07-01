@@ -1,0 +1,102 @@
+.hero-jigsaw {
+  position: relative;
+  height: 90vh;
+  background: linear-gradient(to right, #0b0c0f, #1a1a1a);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.2;
+  z-index: 0;
+}
+
+.glass-content {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 3rem;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 750px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.glass-content h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.glass-content p {
+  font-size: 1.2rem;
+  color: #ddd;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  background: #EC2227;
+  color: white;
+  padding: 0.9rem 1.8rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-cta:hover {
+  background: #ff3a36;
+}
+
+/* Typewriter animation */
+.typed {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 3.5s steps(30, end) 1;
+  border-right: 3px solid #EC2227;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Flechas */
+.flecha {
+  position: absolute;
+  font-size: 5rem;
+  color: white;
+  animation: flechaAnimada 1.5s infinite ease-in-out;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.flecha.izquierda {
+  left: 2rem;
+  bottom: 2rem;
+}
+
+.flecha.derecha {
+  right: 2rem;
+  bottom: 2rem;
+  animation-delay: 0.3s;
+}
+
+@keyframes flechaAnimada {
+  0% { transform: translateY(0); opacity: 0.4; }
+  50% { transform: translateY(8px); opacity: 1; }
+  100% { transform: translateY(0); opacity: 0.4; }
+}

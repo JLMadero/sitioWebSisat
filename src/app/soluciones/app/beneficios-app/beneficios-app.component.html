@@ -1,0 +1,11 @@
+<section class="beneficios-app">
+  <h2>Beneficios clave de la App</h2>
+  <div class="grid-beneficios">
+    <div class="card" *ngFor="let b of beneficios">
+      <div class="icono">{{ b.icono }}</div>
+      <h3>{{ b.titulo }}</h3>
+      <p>{{ b.descripcion }}</p>
+    </div>
+  </div>
+</section>
+

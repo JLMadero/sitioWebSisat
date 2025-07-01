@@ -1,19 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { QuienesSomosComponent } from './quienes-somos.component';
+import { CTAJigsawComponent } from './ctajigsaw.component';
 
-describe('QuienesSomosComponent', () => {
-  
-  let component: QuienesSomosComponent;
-  let fixture: ComponentFixture<QuienesSomosComponent>;
+describe('CTAJigsawComponent', () => {
+  let component: CTAJigsawComponent;
+  let fixture: ComponentFixture<CTAJigsawComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [QuienesSomosComponent]
+      imports: [CTAJigsawComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(QuienesSomosComponent);
+    fixture = TestBed.createComponent(CTAJigsawComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -2,9 +2,9 @@ import { Component, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
-import { ClientesGafeteComponent } from '../clientes-gafete/clientes-gafete.component';
-import { EmpresasTrenComponent } from '../empresas-tren/empresas-tren.component';
-import { CarruselProyectosComponent } from '../carrusel-proyectos/carrusel-proyectos.component';
+import { ClientesGafeteComponent } from './clientes-gafete/clientes-gafete.component';
+import { EmpresasTrenComponent } from './empresas-tren/empresas-tren.component';
+import { CarruselProyectosComponent } from './carrusel-proyectos/carrusel-proyectos.component';
 
 
 
@@ -30,17 +30,7 @@ import { CarruselProyectosComponent } from '../carrusel-proyectos/carrusel-proye
 
 
 export class InicioComponent implements AfterViewInit {
-  soluciones = [
-  { label: 'Paroute', link: 'soluciones/paroute', img: 'assets/imgs/paroute.svg' },
-  { label: 'GPS', link: 'soluciones/gps', img: 'assets/imgs/paroute.svg' },
-  { label: 'Control de fluidos', link: 'soluciones/fluidos', img: 'assets/imgs/paroute.svg' },
-  { label: 'Rastreo satelital', link: 'soluciones/rastreo', img: 'assets/imgs/rastreo.svg' },
-  { label: 'App móvil', link: 'soluciones/app', img: 'assets/imgs/app.svg' },
-  { label: 'Última milla', link: 'soluciones/ultima-milla', img: 'assets/imgs/paroute.svg' },
-  { label:  'Cámaras móviles', link: 'soluciones/camaras', img: 'assets/imgs/camaras.svg'},
-  { label: 'Jigsaw', link: 'soluciones/jigsaw', img: 'assets/imgs/jigsaw.svg' },
-  { label: 'Territory Design', link: 'soluciones/territory', img: 'assets/imgs/territory.svg' }
-];
+  
 
 currentIndex = 0;
 showContent = false;
@@ -59,26 +49,9 @@ ngAfterViewInit(): void {
     }
   }
 
-  // Oculta el preloader y muestra el contenido
-  setTimeout(() => {
-    this.showContent = true;
-    this.startCarousel();
-  }, 3000);
-}
+ 
 
-startCarousel() {
-  setInterval(() => {
-    this.currentIndex = (this.currentIndex + 1) % this.soluciones.length;
-  }, 10000);
-}
 
-prev() {
-  this.currentIndex = (this.currentIndex - 1 + this.soluciones.length) % this.soluciones.length;
-}
 
-next() {
-  this.currentIndex = (this.currentIndex + 1) % this.soluciones.length;
-}
-
-}
+}}
 

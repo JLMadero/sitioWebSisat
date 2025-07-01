@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+.beneficios-jigsaw {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.beneficios-jigsaw h2 {
+  color: #EC2227;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.beneficios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.beneficio {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  padding: 1.5rem 2rem;
+  gap: 3rem;
+  transition: transform 0.3s ease;
+}
+
+.beneficio:hover {
+  transform: translateY(-5px);
+}
+
+.icono {
+  font-size: 48px;
+  color: #EC2227;
+}
+
+.info h3 {
+  font-size: 1.3rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.info p {
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .beneficio {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+

@@ -1,30 +1,17 @@
 import { Component } from '@angular/core';
+import { BeneficiosAppComponent } from './beneficios-app/beneficios-app.component';
+import { CtaFinalAppComponent } from './cta-final-app/cta-final-app.component';
+import { DiferenciadoresAppComponent } from './diferenciadores-app/diferenciadores-app.component';
+import { HeroAppMovilComponent } from './hero-app-movil/hero-app-movil.component';
+import { InfoTecnicaAppComponent } from './info-tecnica-app/info-tecnica-app.component';
 
 @Component({
   selector: 'app-app',
-  imports: [],
+  standalone: true,
+  imports: [BeneficiosAppComponent, CtaFinalAppComponent, DiferenciadoresAppComponent, HeroAppMovilComponent, InfoTecnicaAppComponent],
   templateUrl: './app.component.html',
   styleUrl: '../styleTriptico.css'
 })
 export class AppComponent {
-  state = 0;
-
-  nextStep() {
-    this.state = (this.state + 1) % 4;
-    const triptico = document.getElementById('triptico');
-    if (!triptico) return;
-
-    triptico.classList.add('zoom-out');
-    triptico.classList.remove('zoom-in');
-
-    setTimeout(() => {
-      triptico.classList.remove('step-0', 'step-1', 'step-2', 'step-3');
-      triptico.classList.add(`step-${this.state}`);
-    }, 500);
-
-    setTimeout(() => {
-      triptico.classList.remove('zoom-out');
-      triptico.classList.add('zoom-in');
-    }, 1000);
-  }
+  
 }

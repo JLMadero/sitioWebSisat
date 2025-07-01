@@ -1,0 +1,77 @@
+.que-es-jigsaw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
+  gap: 10rem;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.contenido {
+  max-width: 600px;
+  flex: 1 1 400px;
+}
+
+.contenido h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.marca {
+  color: #EC2227;
+}
+
+.contenido p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.icon {
+  font-size: 1.4rem;
+  margin-right: 0.8rem;
+}
+
+.logo-jigsaw {
+  flex: 0 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: respirar 3s ease-in-out infinite;
+}
+
+.logo-jigsaw img {
+  width: 220px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.logo-jigsaw:hover img {
+  transform: scale(1.05);
+}
+
+@keyframes respirar {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+
+

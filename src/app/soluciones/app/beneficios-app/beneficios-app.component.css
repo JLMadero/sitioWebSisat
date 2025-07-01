@@ -1,0 +1,61 @@
+.beneficios-app {
+  padding: 4rem 2rem;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.beneficios-app h2 {
+  font-size: 2.2rem;
+  color: #EC2227;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.grid-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2rem;
+  max-width: 280px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  animation: respirar 3s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+}
+
+.icono {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+@keyframes respirar {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: scale(1.02);
+    box-shadow: 0 16px 30px rgba(236, 34, 39, 0.15);
+  }
+}

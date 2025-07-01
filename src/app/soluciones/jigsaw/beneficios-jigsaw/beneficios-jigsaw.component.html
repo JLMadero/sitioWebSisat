@@ -1,0 +1,14 @@
+<section class="beneficios-jigsaw">
+  <h2>Beneficios de usar Jigsaw</h2>
+  <div class="beneficios-lista">
+    <div class="beneficio" *ngFor="let item of beneficios">
+      <span class="material-icons icono">{{ item.icono }}</span>
+      <div class="info">
+        <h3>{{ item.titulo }}</h3>
+        <p>{{ item.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
+import { ScrollTopService } from './shared/scroll-top.service';
 import { RouterOutlet } from '@angular/router';
 
 @Component({
@@ -10,6 +11,8 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {}
+export class AppComponent {
+  constructor(private scrollTopService: ScrollTopService) {} // ✅ se activa globalmente
+}
 
 

@@ -1,0 +1,46 @@
+.timeline-jigsaw {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.timeline-jigsaw h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  color: #222;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.6s ease-in-out;
+  gap: 2rem;
+}
+
+.step.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+.info h3 {
+  color: #EC2227;
+  margin-bottom: 0.3rem;
+}
+
+.info p {
+  margin: 0;
+  color: #444;
+}
+

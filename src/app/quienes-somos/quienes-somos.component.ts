@@ -1,10 +1,11 @@
 
 import { CommonModule } from '@angular/common';
-import { HeroQuienesComponent } from '../hero-quienes/hero-quienes.component';
-import { ValoresSisatComponent } from '../valores-sisat/valores-sisat.component';
-import { HistoriaSisatComponent } from '../historia-sisat/historia-sisat.component';
-import { CarruselProyectosComponent } from '../carrusel-proyectos/carrusel-proyectos.component';
-import { AliadosSisatComponent } from '../aliados-sisat/aliados-sisat.component';
+import { HeroQuienesComponent } from './hero-quienes/hero-quienes.component';
+import { ValoresSisatComponent } from './valores-sisat/valores-sisat.component';
+import { HistoriaSisatComponent } from './historia-sisat/historia-sisat.component';
+import { CarruselProyectosComponent } from '../inicio/carrusel-proyectos/carrusel-proyectos.component';
+import { AliadosSisatComponent } from './aliados-sisat/aliados-sisat.component';
+import { RouterModule } from '@angular/router';
 import { AfterViewInit, Component, ElementRef, ViewChild, ViewChildren, QueryList } from '@angular/core';
 
 
@@ -18,11 +19,13 @@ import { AfterViewInit, Component, ElementRef, ViewChild, ViewChildren, QueryLis
     ValoresSisatComponent,
     CarruselProyectosComponent,
     AliadosSisatComponent,
+    RouterModule
   ],
   templateUrl: './quienes-somos.component.html',
   styleUrl: './quienes-somos.component.css'
 })
 export class QuienesSomosComponent implements AfterViewInit {
+  
   isHistoriaVisible = false;
   isValoresVisible = false;
   isAliadosVisible = false;

@@ -1,0 +1,39 @@
+.video-app {
+  background: linear-gradient(180deg, #f5f5f5, #fff);
+  padding: 4rem 2rem;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.video-app h2 {
+  font-size: 2.2rem;
+  color: #EC2227;
+  margin-bottom: 2.5rem;
+}
+
+.mockup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-wrapper {
+  width: 360px;
+  height: 720px;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  animation: aparecer 1.2s ease-out;
+}
+
+@keyframes aparecer {
+  from {
+    transform: translateY(60px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,13 @@
+<section class="funcionamiento-app">
+  <h2>¿Cómo funciona la App?</h2>
+  <div class="linea-tiempo">
+    <div class="paso" *ngFor="let paso of pasos" #step>
+      <div class="icono">{{ paso.icono }}</div>
+      <div class="contenido">
+        <h3>{{ paso.titulo }}</h3>
+        <p>{{ paso.descripcion }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+

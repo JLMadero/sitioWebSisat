@@ -13,10 +13,8 @@ export class SidebarComponent {
   soluciones = [
     { label: 'Cámaras móviles', link: 'soluciones/camaras' },
     { label: 'GPS', link: 'soluciones/gps' },
-    { label: 'Control de fluidos', link: 'soluciones/control-fluidos' },
     { label: 'Rastreo satelital', link: 'soluciones/rastreo-satelital' },
     { label: 'App móvil', link: 'soluciones/app' },
-    { label: 'Última milla', link: 'soluciones/ultima-milla' },
     { label: 'Paroute', link: 'soluciones/paroute' },
     { label: 'Jigsaw', link: 'soluciones/jigsaw' },
     { label: 'Territory Design', link: 'soluciones/territory' },

@@ -1,0 +1,12 @@
+<section class="timeline-jigsaw">
+  <h2>¿Cómo funciona Jigsaw?</h2>
+  <div class="step" *ngFor="let paso of pasos" [class.visible]="paso.visible" #stepEl>
+    <div class="icon">{{ paso.icono }}</div>
+    <div class="info">
+      <h3>{{ paso.titulo }}</h3>
+      <p>{{ paso.descripcion }}</p>
+    </div>
+  </div>
+</section>
+
+
