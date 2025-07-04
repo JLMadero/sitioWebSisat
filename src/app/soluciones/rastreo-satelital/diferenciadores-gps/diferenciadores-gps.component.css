@@ -1,0 +1,64 @@
+.diferenciadores-gps-section {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.diferenciadores-gps-section h2 {
+  font-size: 2rem;
+  color: #EC2227;
+  margin-bottom: 2rem;
+}
+
+.diferenciadores-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.diferenciador-item {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  width: 250px;
+  transition: all 0.8s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.icono {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  transition: color 0.8s;
+}
+
+.diferenciador-item h3,
+.diferenciador-item p {
+  transition: color 0.8s;
+}
+
+/* Estados de color */
+.rojo {
+  background: #EC2227 !important;
+  color: white !important;
+}
+
+.negro {
+  background: #010101 !important;
+  color: white !important;
+}
+
+.rojo .icono,
+.negro .icono,
+.rojo h3, .rojo p,
+.negro h3, .negro p {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .diferenciadores-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+

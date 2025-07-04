@@ -1,0 +1,178 @@
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 0.8rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s, color 0.3s;
+}
+
+.tabs button.active {
+  background: #EC2227;
+  color: white;
+}
+
+/* Grid de equipos */
+.grid-equipos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.equipo-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 1rem;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.equipo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+.equipo-card img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.equipo-card h3 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  color: #222;
+}
+
+.equipo-card p {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.ver-detalles {
+  background: #EC2227;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.ver-detalles:hover {
+  background: #c51d21;
+}
+
+/* Popup */
+.popup-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.popup {
+  background: white;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 90%;
+  padding: 2rem;
+  position: relative;
+  animation: scaleIn 0.3s ease;
+  text-align: center;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.popup img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.popup h3 {
+  font-size: 1.3rem;
+  color: #EC2227;
+  margin-bottom: 0.5rem;
+}
+
+.popup p {
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.popup ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.popup ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.popup ul li::before {
+  content: "✔️";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .tabs {
+    flex-direction: column;
+  }
+}
+
+

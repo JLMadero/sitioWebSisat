@@ -1,0 +1,14 @@
+<section class="diferenciadores-gps-section">
+  <h2>Diferenciadores del rastreo satelital</h2>
+
+  <div class="diferenciadores-list">
+    <div class="diferenciador-item" *ngFor="let dif of diferenciadores" #diferenciador>
+      <div class="icono">{{ dif.icon }}</div>
+      <h3>{{ dif.titulo }}</h3>
+      <p>{{ dif.descripcion }}</p>
+    </div>
+  </div>
+</section>
+
+
+

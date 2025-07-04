@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { GpsComponent } from './gps.component';
+import { HeroGpsComponent } from './hero-gps.component';
 
-describe('GpsComponent', () => {
-  let component: GpsComponent;
-  let fixture: ComponentFixture<GpsComponent>;
+describe('HeroGpsComponent', () => {
+  let component: HeroGpsComponent;
+  let fixture: ComponentFixture<HeroGpsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [GpsComponent]
+      imports: [HeroGpsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(GpsComponent);
+    fixture = TestBed.createComponent(HeroGpsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

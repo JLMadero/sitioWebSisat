@@ -9,6 +9,11 @@ import { Component } from '@angular/core';
 export class SolucionesComponent {
   state = 0;
 
+  /**
+   * 
+   * @param stepClass 
+   * @returns 
+   */
   animateTo(stepClass: string) {
     const triptico = document.getElementById('triptico');
     if (!triptico) return;

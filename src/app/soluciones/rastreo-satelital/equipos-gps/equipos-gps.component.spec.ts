@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ControlFluidosComponent } from './control-fluidos.component';
+import { EquiposGpsComponent } from './equipos-gps.component';
 
-describe('ControlFluidosComponent', () => {
-  let component: ControlFluidosComponent;
-  let fixture: ComponentFixture<ControlFluidosComponent>;
+describe('EquiposGpsComponent', () => {
+  let component: EquiposGpsComponent;
+  let fixture: ComponentFixture<EquiposGpsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ControlFluidosComponent]
+      imports: [EquiposGpsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ControlFluidosComponent);
+    fixture = TestBed.createComponent(EquiposGpsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

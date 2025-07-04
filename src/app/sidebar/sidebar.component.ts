@@ -12,7 +12,6 @@ import { Router, RouterModule } from '@angular/router';
 export class SidebarComponent {
   soluciones = [
     { label: 'Cámaras móviles', link: 'soluciones/camaras' },
-    { label: 'GPS', link: 'soluciones/gps' },
     { label: 'Rastreo satelital', link: 'soluciones/rastreo-satelital' },
     { label: 'App móvil', link: 'soluciones/app' },
     { label: 'Paroute', link: 'soluciones/paroute' },

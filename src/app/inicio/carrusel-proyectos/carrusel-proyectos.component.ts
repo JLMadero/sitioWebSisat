@@ -24,7 +24,6 @@ import { trigger, transition, style, animate } from '@angular/animations';
 export class CarruselProyectosComponent implements AfterViewInit {
   soluciones = [
     { label: 'Paroute', link: '/soluciones/paroute', img: 'assets/imgs/paroute.svg', desc: 'Optimización de rutas y territorios.' },
-    { label: 'GPS', link: '/soluciones/gps', img: 'assets/imgs/sisat.svg', desc: 'Monitoreo de unidades en tiempo real.' },
     { label: 'Rastreo satelital', link: '/soluciones/rastreo-satelital', img: 'assets/imgs/rastreo.svg', desc: 'Ubicación precisa y segura.' },
     { label: 'App móvil', link: '/soluciones/app', img: 'assets/imgs/app.svg', desc: 'Control total desde tu celular.' },
     { label: 'Cámaras móviles', link: '/soluciones/camaras', img: 'assets/imgs/camaras.svg', desc: 'Supervisión visual de unidades.' },

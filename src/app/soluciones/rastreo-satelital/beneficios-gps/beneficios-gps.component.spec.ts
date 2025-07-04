@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { UltimaMillaComponent } from './ultima-milla.component';
+import { BeneficiosGpsComponent } from './beneficios-gps.component';
 
-describe('UltimaMillaComponent', () => {
-  let component: UltimaMillaComponent;
-  let fixture: ComponentFixture<UltimaMillaComponent>;
+describe('BeneficiosGpsComponent', () => {
+  let component: BeneficiosGpsComponent;
+  let fixture: ComponentFixture<BeneficiosGpsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [UltimaMillaComponent]
+      imports: [BeneficiosGpsComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(UltimaMillaComponent);
+    fixture = TestBed.createComponent(BeneficiosGpsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
