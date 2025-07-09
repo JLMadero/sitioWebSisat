@@ -16,9 +16,9 @@
 <div class="popup-backdrop" *ngIf="equipoSeleccionado" (click)="cerrarDetalles()">
   <div class="popup" (click)="$event.stopPropagation()">
     <button class="close-btn" (click)="cerrarDetalles()">✖</button>
-    <img [src]="equipoSeleccionado?.imagen" [alt]="equipoSeleccionado?.nombre">
-    <h3>{{ equipoSeleccionado?.nombre }}</h3>
-    <p>{{ equipoSeleccionado?.descripcion }}</p>
+    <img [src]="equipoSeleccionado.imagen" [alt]="equipoSeleccionado.nombre">
+    <h3>{{ equipoSeleccionado.nombre }}</h3>
+    <p>{{ equipoSeleccionado.descripcion }}</p>
     <ul>
       <li *ngFor="let spec of equipoSeleccionado?.especificaciones">✔️ {{ spec }}</li>
     </ul>

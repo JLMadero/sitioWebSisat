@@ -1,20 +1,22 @@
+/* === EmpresasTrenComponent === */
 .tren-wrapper {
   overflow: hidden;
   width: 100%;
-  background: #fafafa;
-  padding: 3rem 0;
+  padding: 2rem 0;
+  background: transparent;
 }
 
 .tren-contenido {
   display: flex;
   width: max-content;
   animation: scrollLoop 20s linear infinite;
+  align-items: center;
 }
 
 .logos-loop {
   display: flex;
-  gap: 120px;
-  padding-right: 100px;
+  gap: 60px;
+  padding-right: 60px;
 }
 
 .tren-contenido img {
@@ -25,7 +27,7 @@
 }
 
 .tren-contenido img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
   filter: grayscale(0%);
 }
 
@@ -41,6 +43,7 @@
 .tren-contenido:hover {
   animation-play-state: paused;
 }
+
 
 
 

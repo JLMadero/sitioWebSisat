@@ -1,23 +1,38 @@
-<div class="night"></div>
-
+<!-- HERO SISATRÓN -->
 <div id="preloader">
-  <img src="assets/imgs/jpg negro.jpg" alt="Logo Empresa" id="logo">
+  <img src="assets/imgs/png negro.png" alt="Logo SISAT" id="logo">
 </div>
 
-<section class="seccion-blanca">
-  <h2 class="titulo-seccion">Conoce más de nuestros proyectos</h2>
-  <app-carrusel-proyectos></app-carrusel-proyectos>
-</section>
+<main id="main-content">
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="titulo-seccion rojo">Eficiencia extrema en cada entrega</h1>
+        <p class="subtitulo">Bienvenido a una nueva categoría en digitalización logística</p>
+        <button class="cta-boton" (click)="scrollToSection('soluciones')">Solicita una demo</button>
+      </div>
+      <div class="hero-sisatron">
+        <img src="assets/imgs/sisatron-inicio.png" alt="SISATRÓN asistente virtual de SISAT" loading="lazy">
+      </div>
+    </div>
+  </section>
 
-<section class="seccion-gris">
-  <h2 class="titulo-seccion">Lo que opinan nuestros clientes</h2>
-  <app-clientes-gafete></app-clientes-gafete>
-</section>
+  <section class="seccion-gris">
+    <h2 class="titulo-seccion" id="soluciones">Conoce más de nuestras soluciones</h2>
+    <app-carrusel-proyectos></app-carrusel-proyectos>
+  </section>
 
-<section class="seccion-blanca">
-  <h2 class="titulo-seccion">Empresas que confían en SISAT</h2>
-  <app-empresas-tren></app-empresas-tren>
-</section>
+  <section class="seccion-blanca">
+    <h2 class="titulo-seccion">Lo que opinan nuestros clientes</h2>
+    <app-clientes-gafete></app-clientes-gafete>
+  </section>
+
+  <section class="seccion-gris">
+    <h2 class="titulo-seccion">Empresas que confían en SISAT</h2>
+    <app-empresas-tren></app-empresas-tren>
+  </section>
+</main>
+
 
 
 

@@ -31,6 +31,13 @@ import { CarruselProyectosComponent } from './carrusel-proyectos/carrusel-proyec
 
 export class InicioComponent implements AfterViewInit {
   
+  scrollToSection(sectionId: string) {
+  const element = document.getElementById(sectionId);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 
 currentIndex = 0;
 showContent = false;

@@ -1,33 +1,65 @@
 .aliados {
-  background: linear-gradient(to bottom, #f4f4f4, #fff);
-  padding: 3rem 1.5rem;
+  background: transparent;
+  padding: 4rem 2rem;
   text-align: center;
+}
+
+.aliados h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.aliados p {
+  font-size: 1rem;
+  color: #d4d4d4;
 }
 
 .logos {
   display: flex;
   justify-content: center;
-  gap: 4rem; /* antes era 2rem */
+  align-items: center;
+  gap: 3rem;
   flex-wrap: wrap;
-  margin-top: 2rem;
+  max-width: 900px;
+  margin: 0 auto 2rem auto;
 }
 
 .logos img {
-  height: 80px;
-  transition: transform 0.3s ease;
-  padding: 0 1rem; /* Espacio horizontal adicional */
+  height: 70px;
+  max-height: 70px;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%) brightness(0.9);
 }
 
 .logos img:hover {
-  transform: scale(1.1);
-}
-.logos a {
-  display: inline-block;
-  transition: transform 0.3s ease;
+  transform: scale(1.08);
+  filter: grayscale(0%) brightness(1);
 }
 
-.logos a:hover {
-  transform: scale(1.1);
+.logos a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .logos {
+    gap: 2rem;
+  }
+
+  .logos img {
+    height: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logos img {
+    height: 40px;
+  }
+}
+
 
 

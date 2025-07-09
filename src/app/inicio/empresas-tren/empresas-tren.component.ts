@@ -14,10 +14,10 @@ export class EmpresasTrenComponent implements AfterViewInit {
   duracion = 20; // segundos por defecto
 
   empresas = [
-    { logo: 'assets/imgs/cemex.jpeg', url: 'https://www.cemex.com/' },
+    { logo: 'assets/imgs/inicio/cemex.png', url: 'https://www.cemex.com/' },
     { logo: 'assets/imgs/gruma.png', url: 'https://www.gruma.com/' },
-    { logo: 'assets/imgs/bachoco.png', url: 'https://bachoco.com' },
-    { logo: 'assets/imgs/atlas.gif', url: 'https://www.atlascopco.com/' },
+    { logo: 'assets/imgs/inicio/bachoco.png', url: 'https://bachoco.com' },
+    { logo: 'assets/imgs/inicio/atlasCopco.png', url: 'https://www.atlascopco.com/' },
     { logo: 'assets/imgs/quality.png', url: 'https://www.qualitypost.com.mx/' },
     { logo: 'assets/imgs/mega.png', url: 'https://www.megacable.com.mx/' },
     { logo: 'assets/imgs/grainger.png', url: 'https://www.grainger.com.mx/' }

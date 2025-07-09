@@ -13,7 +13,7 @@ export class AliadosSisatComponent {
     { img: 'assets/imgs/google.jpg', link: 'https://about.google' },
     { img: 'assets/imgs/microsoft.jpg', link: 'https://www.microsoft.com/es-mx/' },
     { img: 'assets/imgs/jigsawNosotros.png', link: 'https://fuel.jigsawm2m.com/Public/Login.aspx?ReturnUrl=%2f' },
-    { img: 'assets/imgs/caiAmp.jpg', link: 'https://www.calamp.com' }
+    { img: 'assets/imgs/quienes-somos/cal.png', link: 'https://www.calamp.com' }
   ];
 }
 

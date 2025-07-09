@@ -1,16 +1,50 @@
 .historia {
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
   text-align: center;
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
+  background: linear-gradient(180deg, #010101 0%, #1b004d 50%, #2763b1 100%);
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in;
 }
 
 .historia .logo {
-  width: 120px;
+  width: 100px;
   margin-bottom: 1rem;
+  filter: drop-shadow(0 0 8px rgba(0,0,0,0.5));
+}
+
+.historia-texto p {
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.historia-texto p.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .rojo {
   color: #EC2227;
   font-weight: bold;
 }
+
+/* Simple fade-in */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .historia {
+    padding: 3rem 1rem;
+  }
+}
+

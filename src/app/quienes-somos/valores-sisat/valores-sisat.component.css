@@ -1,3 +1,17 @@
+.valores-sisat {
+  padding: 4rem 1rem;
+  background: linear-gradient(180deg, #010101 0%, #1b004d 50%, #2763b1 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  margin-bottom: 2rem;
+  font-family: 'Anton', sans-serif;
+  color: #ffffff;
+}
+
 .valores-grid {
   display: flex;
   gap: 2rem;
@@ -6,29 +20,54 @@
 }
 
 .valor-card {
-  background: white;
-  padding: 2rem;
-  width: 280px;
-  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem 1.5rem;
+  width: 260px;
   border-radius: 16px;
-  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.valor-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .valor-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.1);
 }
 
 .icono-valor {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
-.titulo-seccion {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 2.5rem;
-  color: #222;
+
+.valor-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #FF500A;
 }
+
+.valor-card p {
+  font-size: 0.95rem;
+  color: #dddddd;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .valores-sisat {
+    padding: 3rem 1rem;
+  }
+
+  .valor-card {
+    width: 90%;
+  }
+}
+
 
 

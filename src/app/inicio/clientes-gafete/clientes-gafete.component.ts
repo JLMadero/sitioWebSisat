@@ -17,7 +17,7 @@ export class ClientesGafeteComponent {
     cargo: 'Gerente de operaciones Cayenne Express',
     testimonio: 'Sabemos dónde están nuestros equipos, nuestros clientes tienen más seguridad y confianza en nuestra empresa. Con Jigsaw llevamos el control del diésel consumido e inventarios, tenemos un ahorro entre el 6 y 7 porciento del consumo de combustible.',
     foto: 'assets/imgs/ALVARO.jpg',
-    logo: 'assets/imgs/cayennelogo.png',
+    logo: 'assets/imgs/inicio/cayene.png',
     volteado: false
   },
   {
@@ -41,7 +41,7 @@ export class ClientesGafeteComponent {
     cargo: 'Gerencia corporativa de transporte, Bachoco',
     testimonio: 'La instalación y puesta en marcha de los GPS ha contribuido de manera importante para abatir los robos de unidades. También nos ha ayudado a controlar la movilidad en ciertas zonas o en horarios de trabajo.',
     foto: 'assets/imgs/salvador.jpg',
-    logo: 'assets/imgs/bachoco.png',
+    logo: 'assets/imgs/inicio/bachoco.png',
     volteado: false
   },
   {
@@ -49,7 +49,7 @@ export class ClientesGafeteComponent {
   cargo: 'Jefe de Auditoría Agromotriz',
   testimonio: 'Es una aplicación que a nosotros nos sirve bastante para estar monitoreando constantemente nuestras flotas de trabajo, podemos ver qué hicieron en tiempo pasado y dónde se encuentran en tiempo real. Nos brinda más de lo que necesitamos, sus operadores son muy atentos.',
   foto: 'assets/imgs/victor.jpg', // reemplaza con el nombre real del archivo
-  logo: 'assets/imgs/agromotriz.jpeg',       // si tienes un logo de la empresa
+  logo: 'assets/imgs/inicio/agromotriz.png',       // si tienes un logo de la empresa
   volteado: false
 }
 

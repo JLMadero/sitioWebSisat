@@ -1,3 +1,6 @@
+main{
+background: #010101 ;
+}
 .hero-wrapper {
   height: 100vh; /* Asegura scroll */
   display: flex;
@@ -10,7 +13,6 @@
   transform: translateY(80px);
   transition: opacity 0.9s ease-out, transform 0.9s ease-out;
   margin-top: 5rem;
-  margin-bottom: 5rem;
 }
 
 .section-container.visible {
@@ -21,7 +23,7 @@
 
 
 .soluciones-mini-scroll {
-  background: #fff;
+  background: linear-gradient(180deg, #010101 0%, #1b004d 50%, #2763b1 100%);
   padding: 4rem 1.5rem;
   text-align: center;
 }
@@ -29,7 +31,7 @@
 .soluciones-mini-scroll h2 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #222;
+  color: #fffefe;
 }
 
 
