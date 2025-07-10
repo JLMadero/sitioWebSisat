@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { trigger, transition, style, animate } from '@angular/animations';
@@ -29,7 +29,7 @@ import { CarruselProyectosComponent } from './carrusel-proyectos/carrusel-proyec
 })
 
 
-export class InicioComponent implements AfterViewInit {
+export class InicioComponent implements OnInit,AfterViewInit {
   
   scrollToSection(sectionId: string) {
   const element = document.getElementById(sectionId);
@@ -56,9 +56,17 @@ ngAfterViewInit(): void {
     }
   }
 
- 
 
+}
 
+ngOnInit(): void {
+    // Si quieres retrasar la eliminación del preloader:
+    setTimeout(() => {
+      const preloader = document.getElementById('preloader');
+      if (preloader) {
+        preloader.classList.add('fade-out');
+      }
+    }, 2000); // 2 segundos, o el tiempo de tu animación
+  }
 
-}}
-
+}

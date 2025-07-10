@@ -71,9 +71,11 @@
   border-radius: 8px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; 
 }
 
 .cta-hero:hover {
+  
   background-color: #b61a1e;
   transform: scale(1.05);
 }
@@ -85,7 +87,7 @@
 }
 
 .hero-sisatron img {
-  width: 180px;
+  width: 320px;
   animation: floatSisatron 4s ease-in-out infinite;
 }
 
@@ -108,7 +110,7 @@
   }
 
   .hero-sisatron img {
-    width: 140px;
+    width: 189px;
   }
 }
 

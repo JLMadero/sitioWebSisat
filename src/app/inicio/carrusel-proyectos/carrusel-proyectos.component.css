@@ -6,7 +6,7 @@
 }
 
 .carousel-title {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   color: #ffffff;
 }
@@ -65,13 +65,13 @@
 }
 
 .card-solucion h3 {
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   color: #EC2227;
   margin: 0.3rem 0;
 }
 
 .card-solucion p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #dddddd;
 }
 

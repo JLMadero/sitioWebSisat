@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule, NgFor } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
+import { NavbarService } from '../shared/navbar.service';
+
 
 @Component({
   selector: 'app-sidebar',
@@ -26,7 +28,21 @@ export class SidebarComponent {
     { label: 'Sisat.io', link: "http://sisat.io/", external: true }
   ];
 
-  constructor(private router: Router) { }
+ constructor(private router: Router, private navbarService: NavbarService) {
+  this.navbarService.openSolucionesDropdown$.subscribe(() => {
+    this.openSolucionesDropdownProgrammatically();
+  });
+}
+openSolucionesDropdownProgrammatically() {
+  setTimeout(() => { // espera a que el DOM esté listo
+    const solucionesLink = document.querySelector('.nav-link.dropdown-toggle') as HTMLElement;
+    if (solucionesLink) {
+      solucionesLink.click();
+    }
+  }, 200);
+}
+
+
 
   navigate(path: string, external = false) {
     if (external) {
@@ -35,9 +51,13 @@ export class SidebarComponent {
       this.router.navigate([path]);
     }
   }
+
+
   
 
 }
+
+
 
 
 
