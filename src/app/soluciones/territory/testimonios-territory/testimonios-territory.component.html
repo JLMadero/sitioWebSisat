@@ -1,0 +1,14 @@
+<section class="testimonios-section">
+  <h2 class="titulo-seccion">Lo que opinan nuestros clientes</h2>
+
+  <div class="testimonios-grid">
+    <div class="card-testimonio" *ngFor="let t of testimonios">
+      <p class="mensaje">"{{ t.mensaje }}"</p>
+      <div class="cliente">
+        <strong>{{ t.nombre }}</strong>
+        <span>{{ t.empresa }}</span>
+      </div>
+    </div>
+  </div>
+</section>
+

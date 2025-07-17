@@ -1,0 +1,55 @@
+.testimonios-section {
+  padding: 4rem 2rem;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+}
+
+.titulo-seccion {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 2rem;
+}
+
+.testimonios-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card-testimonio {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 2rem;
+  width: 300px;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-testimonio:hover {
+  transform: translateY(-6px);
+}
+
+.mensaje {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cliente {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.cliente strong {
+  color: #fff;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .card-testimonio {
+    width: 100%;
+  }
+}

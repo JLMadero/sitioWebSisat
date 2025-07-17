@@ -102,7 +102,7 @@ body {
   }
 }
 
-/* ======== HERO ======== */
+/* ======== HERO ======== 
 .hero {
   background: transparent;
   color: #ffffff;
@@ -123,20 +123,20 @@ body {
 }
 
 .hero-text {
-  flex: 1 1 400px;
+  flex: 1 1 600px;
   text-align: center;
 }
 
 .hero-sisatron {
   flex: 1 1 300px;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
 .hero-sisatron img {
   width: 100%;
-  max-width: 300px;
+  max-width: 600px;
   animation: floatSisatron 4s ease-in-out infinite;
 }
 
@@ -145,7 +145,7 @@ body {
   50% { transform: translateY(-10px); }
 }
 
-/* ======== TEXT ======== */
+ ======== TEXT ======== 
 .titulo-seccion {
   font-family: 'Anton', sans-serif;
   font-size: 2.2rem;
@@ -167,7 +167,7 @@ body {
   margin-right: auto;
 }
 
-/* ======== CTA BUTTON ======== */
+/* ======== CTA BUTTON ======== 
 .cta-boton {
   background-color: #EC2227;
   color: #ffffff;

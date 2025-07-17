@@ -1,0 +1,52 @@
+.diferenciadores-section {
+    
+  padding: 4rem 2rem;
+  text-align: center;
+  color: #ffffff;
+  background: transparent;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.diferenciador-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  padding: 2rem;
+  border-radius: 16px;
+  width: 260px;
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.diferenciador-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.diferenciador-card h3 {
+    
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.diferenciador-card p {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+  .diferenciador-card {
+    width: 100%;
+  }
+}

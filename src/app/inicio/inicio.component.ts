@@ -5,6 +5,7 @@ import { trigger, transition, style, animate } from '@angular/animations';
 import { ClientesGafeteComponent } from './clientes-gafete/clientes-gafete.component';
 import { EmpresasTrenComponent } from './empresas-tren/empresas-tren.component';
 import { CarruselProyectosComponent } from './carrusel-proyectos/carrusel-proyectos.component';
+import { HeroInicioComponent } from './hero-inicio/hero-inicio.component';
 
 
 
@@ -12,7 +13,7 @@ import { CarruselProyectosComponent } from './carrusel-proyectos/carrusel-proyec
 @Component({
   selector: 'app-inicio',
   standalone: true,
-  imports: [CommonModule, RouterModule, ClientesGafeteComponent, EmpresasTrenComponent, CarruselProyectosComponent],
+  imports: [CommonModule, RouterModule, ClientesGafeteComponent, EmpresasTrenComponent, CarruselProyectosComponent, HeroInicioComponent],
   templateUrl: './inicio.component.html',
   styleUrls: ['./inicio.component.css'],
   animations: [

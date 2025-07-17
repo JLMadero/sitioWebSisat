@@ -1,0 +1,12 @@
+<section class="beneficios-section">
+  <h2 class="titulo-seccion">¿Por qué usar Territory Design?</h2>
+  <div class="beneficios-grid">
+    <div class="beneficio-card" *ngFor="let beneficio of beneficios">
+      <div class="icono-beneficio">{{ beneficio.icon }}</div>
+      <h3>{{ beneficio.titulo }}</h3>
+      <p>{{ beneficio.descripcion }}</p>
+    </div>
+  </div>
+</section>
+
+

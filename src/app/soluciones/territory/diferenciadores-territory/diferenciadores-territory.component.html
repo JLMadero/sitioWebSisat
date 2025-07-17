@@ -1,0 +1,13 @@
+<section class="diferenciadores-section">
+  <h2 class="titulo-seccion">Diferenciadores Clave</h2>
+  <div class="cards-grid">
+    <div
+      class="diferenciador-card"
+      *ngFor="let item of diferenciadores"
+    >
+      <h3>{{ item.titulo }}</h3>
+      <p>{{ item.descripcion }}</p>
+    </div>
+  </div>
+</section>
+
