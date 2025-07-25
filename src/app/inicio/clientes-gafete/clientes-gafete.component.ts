@@ -25,7 +25,7 @@ export class ClientesGafeteComponent {
     cargo: 'Supervisor de C2 Yoreme',
     testimonio: 'Para Yoreme ha sido satisfactorio que con el rastreo satelital de SISAT nos permitió tener visibilidad de nuestras entregas en tiempo real, revisamos el estatus de viaje y así podemos saber cuándo es entregado el producto a nuestros clientes.',
     foto: 'assets/imgs/sergio.jpg', // asegúrate que la imagen corresponda
-    logo: 'assets/imgs/yoreme.jpg',
+    logo: 'assets/imgs/yoreme.png',
     volteado: false
   },
   {

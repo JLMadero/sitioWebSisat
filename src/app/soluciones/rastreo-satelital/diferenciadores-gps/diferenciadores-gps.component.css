@@ -1,12 +1,15 @@
 .diferenciadores-gps-section {
   text-align: center;
   padding: 4rem 2rem;
+  background: transparent;
+  font-family: 'Roboto', sans-serif;
 }
 
 .diferenciadores-gps-section h2 {
-  font-size: 2rem;
-  color: #EC2227;
+  font-size: 2.2rem;
+  color: #ffffff;
   margin-bottom: 2rem;
+  font-weight: bold;
 }
 
 .diferenciadores-list {
@@ -17,26 +20,40 @@
 }
 
 .diferenciador-item {
-  background: #fff;
-  border-radius: 12px;
-  padding: 1.5rem;
-  width: 250px;
-  transition: all 0.8s ease;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  background: #1b004d;
+  border-radius: 16px;
+  padding: 2rem 1.5rem;
+  width: 270px;
+  transition: all 0.4s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  color: #fff;
+  text-align: center;
 }
 
-.icono {
-  font-size: 2rem;
+.diferenciador-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6);
+}
+
+.diferenciador-item .icono {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #ec2227;
+}
+
+.diferenciador-item h3 {
+  font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  transition: color 0.8s;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-.diferenciador-item h3,
 .diferenciador-item p {
-  transition: color 0.8s;
+  font-size: 0.95rem;
+  color: #dddddd;
+  line-height: 1.5;
 }
 
-/* Estados de color */
 .rojo {
   background: #EC2227 !important;
   color: white !important;
@@ -59,6 +76,12 @@
     flex-direction: column;
     align-items: center;
   }
+
+  .diferenciador-item {
+    width: 100%;
+  }
 }
+
+
 
 

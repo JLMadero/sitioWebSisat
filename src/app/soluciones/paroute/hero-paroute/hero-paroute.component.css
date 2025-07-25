@@ -1,115 +1,144 @@
-.paroute-hero {
-    position: relative;
-    height: 91vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    background-color: #f5f5f5;
+.hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
 }
 
-.hero-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 0;
-    filter: brightness(0.5);
+.video-fondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: 0;
 }
 
-/* Caja central estilo glass */
-.glass-box {
-    position: relative;
-    z-index: 1;
-    background: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10px);
-    border-radius: 16px;
-    padding: 3rem;
-    text-align: center;
-    color: #fff;
-    max-width: 720px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+.hero-overlay {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 2rem;
 }
 
-.glass-box h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: bold;
+.hero-box {
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  padding: 3rem;
+  text-align: center;
+  color: #ffffff;
+  max-width: 550px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 
-.glass-box h1 span {
-    color: #EC2227;
+.hero-box h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
-.glass-box p {
-    font-size: 1.1rem;
-    margin-bottom: 2rem;
+.hero-box h1 .destacado {
+  color: #EC2227;
 }
 
-.btn-cta {
-    background: #EC2227;
-    padding: 0.8rem 1.5rem;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s ease;
+.subtitulo-box {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #dddddd;
 }
 
-.btn-cta:hover {
-    background: #ff3a36;
+.cta-boton {
+  background-color: #EC2227;
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
-/* Flechas grandes laterales */
+.cta-boton:hover {
+  background: #ff3a36;
+  transform: scale(1.05);
+}
+
+/* Flechas */
 .flecha {
-    position: absolute;
-    font-size: 6rem;
-    color: white;
-    animation: bajar 1.5s infinite ease-in-out;
-    z-index: 2;
+  position: absolute;
+  font-size: 6rem;
+  color: white;
+  animation: bajar 1.5s infinite ease-in-out;
+  z-index: 2;
 }
 
 .flecha.izquierda {
-    bottom: 3rem;
-    left: 2rem;
+  bottom: 3rem;
+  left: 2rem;
 }
 
 .flecha.derecha {
-    bottom: 3rem;
-    right: 2rem;
+  bottom: 3rem;
+  right: 2rem;
+  animation-delay: 0.3s;
 }
 
 @keyframes bajar {
-    0% {
-        transform: translateY(0);
-        opacity: 0.3;
-    }
-
-    50% {
-        transform: translateY(10px);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translateY(0);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateY(10px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 0.3;
+  }
 }
 
-/* Responsive */
+/* === RESPONSIVE === */
 @media (max-width: 768px) {
-    .glass-box {
-        padding: 2rem;
-    }
+  .hero-box {
+    padding: 2rem 1rem;
+    max-width: 90%;
+  }
 
-    .glass-box h1 {
-        font-size: 2rem;
-    }
+  .hero-box h1 {
+    font-size: 1.6rem;
+  }
 
-    .flecha {
-        font-size: 2rem;
-    }
+  .subtitulo-box {
+    font-size: 1rem;
+  }
+
+  .cta-boton {
+    font-size: 1rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .flecha {
+    font-size: 2.5rem;
+  }
+
+  .flecha.izquierda {
+    left: 1rem;
+    bottom: 1rem;
+  }
+
+  .flecha.derecha {
+    right: 1rem;
+    bottom: 1rem;
+  }
 }

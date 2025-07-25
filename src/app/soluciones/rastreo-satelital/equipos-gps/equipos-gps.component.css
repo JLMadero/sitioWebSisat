@@ -1,4 +1,3 @@
-/* Tabs */
 .tabs {
   display: flex;
   justify-content: center;
@@ -24,7 +23,6 @@
   color: white;
 }
 
-/* Grid de equipos */
 .grid-equipos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -35,18 +33,19 @@
 }
 
 .equipo-card {
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  padding: 1rem;
+  background: #1b004d;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  padding: 2rem 1rem;
   text-align: center;
+  transition: all 0.4s ease;
+  color: white;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .equipo-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
 }
 
 .equipo-card img {
@@ -57,14 +56,14 @@
 }
 
 .equipo-card h3 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin: 0.5rem 0;
-  color: #222;
+  color: #ffffff;
 }
 
 .equipo-card p {
   font-size: 0.9rem;
-  color: #555;
+  color: #dddddd;
   margin-bottom: 1rem;
 }
 
@@ -157,7 +156,7 @@
   top: 0;
 }
 
-/* Animations */
+/* Animaciones */
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
@@ -168,11 +167,20 @@
   to { transform: scale(1); opacity: 1; }
 }
 
-/* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .tabs {
     flex-direction: column;
   }
+
+  .grid-equipos {
+    padding: 1rem;
+  }
+
+  .equipo-card {
+    width: 100%;
+  }
 }
+
+
 
 

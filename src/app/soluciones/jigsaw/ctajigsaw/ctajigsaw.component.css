@@ -1,9 +1,9 @@
 .cta-jigsaw {
   padding: 4rem 2rem;
-  background: linear-gradient(to right, #ffffff, #f9f9f9);
   display: flex;
   justify-content: center;
   align-items: center;
+  background: transparent;
 }
 
 .cta-content {
@@ -19,12 +19,12 @@
 .text-content {
   flex: 1;
   min-width: 300px;
+  color: #ffffff;
 }
 
 .text-content h2 {
   font-size: 2.4rem;
   font-weight: bold;
-  color: #111;
 }
 
 .text-content h2 span {
@@ -34,7 +34,7 @@
 .text-content p {
   margin: 1rem 0 2rem;
   font-size: 1.1rem;
-  color: #444;
+  color: #dddddd;
 }
 
 .cta-btn {
@@ -63,14 +63,21 @@
   max-width: 350px;
   width: 100%;
   border-radius: 12px;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3);
 }
 
 @keyframes breath {
-  0%, 100% {
-    transform: scale(1);
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+@media (max-width: 768px) {
+  .text-content h2 {
+    font-size: 2rem;
   }
-  50% {
-    transform: scale(1.03);
+
+  .text-content p {
+    font-size: 1rem;
   }
 }
+

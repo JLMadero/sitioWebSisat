@@ -41,19 +41,19 @@ categoriaSeleccionada: 'gps' | 'sensores' | 'camaras' = 'gps';
       },
       {
         nombre: 'LMU-330',
-        imagen: 'assets/imgs/equipos-gps/lmu-330.jpg',
+        imagen: 'assets/imgs/equipos-gps/lmu-330.png',
         descripcion: 'Compacto, discreto y seguro para rastreo vehicular.',
         especificaciones: ['Diseño compacto', 'Fácil instalación', 'Funcionalidad esencial']
       },
       {
         nombre: 'LMU-1230 Weatherproof',
-        imagen: 'assets/imgs/equipos-gps/lmu-1230.jpg',
+        imagen: 'assets/imgs/equipos-gps/lmu-1230.png',
         descripcion: 'Uso rudo, resistente al agua y condiciones adversas.',
         especificaciones: ['Resistente al agua', 'Uso rudo', 'Ideal para remolques']
       },
       {
         nombre: 'LMU-2630',
-        imagen: 'assets/imgs/equipos-gps/lmu-2630.jpeg',
+        imagen: 'assets/imgs/equipos-gps/lmu-2630.png',
         descripcion: 'Administración de flotas con múltiples capacidades de telemetría.',
         especificaciones: ['Alta capacidad', 'Telemetría completa', 'Control de flotas']
       }
@@ -61,7 +61,7 @@ categoriaSeleccionada: 'gps' | 'sensores' | 'camaras' = 'gps';
     sensores: [
       {
         nombre: 'TD-150',
-        imagen: 'assets/imgs/equipos-gps/td-150.jpg',
+        imagen: 'assets/imgs/equipos-gps/td-150.png',
         descripcion: 'Sensor de combustible para tractocamiones y vehículos de uso rudo.',
         especificaciones: ['Detección de nivel de combustible', 'Uso rudo', 'Alertas en tiempo real']
       }
@@ -69,19 +69,19 @@ categoriaSeleccionada: 'gps' | 'sensores' | 'camaras' = 'gps';
     camaras: [
       {
         nombre: 'EM500NH-P4',
-        imagen: 'assets/imgs/equipos-gps/em500nh-p4.jpg',
+        imagen: 'assets/imgs/equipos-gps/em500nh-p4.png',
         descripcion: 'Vigilancia discreta con imágenes de 550 TVL.',
         especificaciones: ['550 TVL', 'Diseño discreto', 'Alta resolución']
       },
       {
         nombre: 'EMW-330',
-        imagen: 'assets/imgs/equipos-gps/emw-330.jpg',
+        imagen: 'assets/imgs/equipos-gps/emw-330.png',
         descripcion: 'Uso rudo, 520 TVL, ideal para exteriores y baja iluminación.',
         especificaciones: ['520 TVL', 'Uso rudo', 'Baja iluminación']
       },
       {
         nombre: 'EMD-300',
-        imagen: 'assets/imgs/equipos-gps/emd-300.jpg',
+        imagen: 'assets/imgs/equipos-gps/emd-300.png',
         descripcion: 'Mini domo móvil con imágenes claras hasta 550 TVL.',
         especificaciones: ['550 TVL', 'Mini domo móvil', 'Ideal para vigilancia']
       }

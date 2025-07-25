@@ -1,108 +1,103 @@
-.hero-camaras {
+.hero-video-container {
   position: relative;
   width: 100%;
-  height: 91vh;
-  background-color: #0b0c0f;
-  color: white;
+  height: 123vh;
   overflow: hidden;
+  color: white;
 }
 
-/* Imagen base desenfocada */
-.imagen-hero {
+.video-fondo {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 0;
-}
-
-.imagen-hero img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-}
-
-/* Capa borrosa */
-.imagen-blur {
-  filter: blur(8px);
-  transform: scale(1.05); /* Para evitar bordes visibles del blur */
-}
-
-/* Capa semiopaca encima */
-.imagen-overlay {
-  background-color: rgba(0, 0, 0, 0.2);
   z-index: 0;
 }
 
-/* Contenido */
-.contenido {
+.hero-overlay {
   position: relative;
   z-index: 1;
-  background: rgba(0, 0, 0, 0.65);
-  backdrop-filter: blur(8px);
-  padding: 2.5rem;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+}
+
+.hero-box {
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 16px;
-  max-width: 800px;
-  width: 90%;
+  padding: 3rem 2rem;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  position: absolute;
+  color: #ffffff;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(4px);
 }
 
-.contenido h1 {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.contenido p {
-  font-size: 1.1rem;
+.titulo-principal {
+  font-size: 2.7rem;
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 1.5rem;
+  font-family: 'Anton', sans-serif;
+  color: #EC2227;
 }
 
-.btn-cta {
-  background: #EC2227;
-  padding: 0.8rem 1.5rem;
-  color: white;
+.subtitulo-box {
+  font-size: 1.5rem;
+  color: #dddddd;
+  margin-bottom: 2rem;
+}
+
+.cta-boton {
+  background-color: #EC2227;
+  color: #ffffff;
   border: none;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.3rem;
+  font-weight: 500;
   border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
 }
 
-.btn-cta:hover {
-  background: #ff3a36;
+.cta-boton:hover {
+  background-color: #b61a1e;
+  transform: scale(1.05);
 }
 
-/* Flechas */
-.flecha {
-  position: absolute;
-  font-size: 5rem;
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero-video-container {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  overflow: hidden;
   color: white;
-  animation: flechaAnimada 1.5s infinite ease-in-out;
-  opacity: 0.7;
-  z-index: 2;
+}
+  .titulo-principal {
+    font-size: 1.8rem;
+  }
+
+  .subtitulo-box {
+    font-size: 1rem;
+  }
+
+  .hero-box {
+    padding: 2rem 1.5rem;
+  }
+
+  .cta-boton {
+    font-size: 0.8rem;
+  }
 }
 
-.flecha.izquierda {
-  left: 2rem;
-  bottom: 2rem;
-}
-
-.flecha.derecha {
-  right: 2rem;
-  bottom: 2rem;
-  animation-delay: 0.3s;
-}
-
-@keyframes flechaAnimada {
-  0% { transform: translateY(0); opacity: 0.4; }
-  50% { transform: translateY(8px); opacity: 1; }
-  100% { transform: translateY(0); opacity: 0.4; }
-}
 
 

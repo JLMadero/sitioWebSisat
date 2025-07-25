@@ -14,7 +14,7 @@ export class EmpresasTrenComponent implements AfterViewInit {
   duracion = 20; // segundos por defecto
 
   empresas = [
-    { logo: 'assets/imgs/inicio/cemex.png', url: 'https://www.cemex.com/' },
+    { logo: 'assets/imgs/inicio/cemex-logo.png', url: 'https://www.cemex.com/' },
     { logo: 'assets/imgs/gruma.png', url: 'https://www.gruma.com/' },
     { logo: 'assets/imgs/inicio/bachoco.png', url: 'https://bachoco.com' },
     { logo: 'assets/imgs/inicio/atlasCopco.png', url: 'https://www.atlascopco.com/' },

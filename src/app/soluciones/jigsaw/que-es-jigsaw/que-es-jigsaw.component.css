@@ -3,15 +3,16 @@
   justify-content: center;
   align-items: center;
   padding: 4rem 2rem;
-  background: linear-gradient(to bottom, #f9f9f9, #f0f0f0);
-  gap: 10rem;
+  gap: 4rem;
   flex-wrap: wrap;
   text-align: left;
+  background: transparent;
 }
 
 .contenido {
   max-width: 600px;
   flex: 1 1 400px;
+  color: #ffffff;
 }
 
 .contenido h2 {
@@ -26,7 +27,7 @@
 
 .contenido p {
   font-size: 1.05rem;
-  color: #333;
+  color: #dddddd;
   margin-bottom: 2rem;
   line-height: 1.6;
 }
@@ -42,12 +43,13 @@ li {
   align-items: center;
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #444;
+  color: #dddddd;
 }
 
 .icon {
   font-size: 1.4rem;
   margin-right: 0.8rem;
+  color: #EC2227;
 }
 
 .logo-jigsaw {
@@ -72,6 +74,7 @@ li {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.03); }
 }
+
 
 
 

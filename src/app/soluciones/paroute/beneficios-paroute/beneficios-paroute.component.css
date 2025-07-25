@@ -1,13 +1,13 @@
 .valor-paroute {
   padding: 4rem 2rem;
-  background: #f9f9f9;
   text-align: center;
+  background: transparent;
 }
 
 .valor-paroute h2 {
   font-size: 2.2rem;
   margin-bottom: 3rem;
-  color: #222;
+  color: #ffffff;
 }
 
 .grid-valores {
@@ -18,11 +18,12 @@
 }
 
 .valor-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 12px;
   padding: 2rem;
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease;
+  color: #ffffff;
 }
 
 .valor-card:hover {
@@ -31,8 +32,9 @@
 
 .valor-card img {
   width: 60px;
-  height: 60px;  /* fuerza misma altura para todos */
+  height: 60px;
   object-fit: contain;
   margin-bottom: 1rem;
 }
+
 

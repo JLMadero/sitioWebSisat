@@ -1,29 +1,31 @@
 .video-paroute {
-  background: #f7f7f7;
   padding: 5rem 2rem;
   text-align: center;
   font-family: 'Roboto', sans-serif;
+  background: transparent;
 }
 
 .video-paroute h2 {
   font-size: 2.5rem;
-  color: #010101;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
 .video-paroute p {
-  color: #555;
+  color: #dddddd;
   margin-bottom: 2rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
 .video-wrapper {
   position: relative;
-  padding-bottom: 25%;
+  padding-bottom: 56.25%; /* 16:9 ratio */
   height: 0;
+  width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
   border-radius: 12px;
   overflow: hidden;
 }
@@ -36,3 +38,25 @@
   height: 100%;
   border: none;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .video-paroute {
+    padding: 3rem 1rem;
+  }
+
+  .video-paroute h2 {
+    font-size: 1.8rem;
+  }
+
+  .video-paroute p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .video-wrapper {
+    border-radius: 8px;
+  }
+}
+
+

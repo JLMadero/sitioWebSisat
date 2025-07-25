@@ -1,7 +1,7 @@
 .cta-paroute {
-  background: linear-gradient(135deg, #f4f6f8, #e6ebf0); /* Más limpio, menos saturado */
   padding: 4rem 2rem;
   font-family: 'Roboto', sans-serif;
+  background: transparent;
 }
 
 .cta-content {
@@ -18,12 +18,13 @@
   max-width: 300px;
   height: auto;
   border-radius: 16px;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
 }
 
 .cta-text {
   max-width: 500px;
   text-align: left;
+  color: #ffffff;
 }
 
 .cta-text h2 {
@@ -33,8 +34,7 @@
 }
 
 .cta-text p {
-  font-size: 1rem;
-  color: #222;
+  font-size: 1.1rem;
   margin-bottom: 1.5rem;
   line-height: 1.6;
 }
@@ -48,15 +48,32 @@
   transform: scale(1.05);
 }
 
+/* Responsive */
 @media (max-width: 768px) {
   .cta-content {
     flex-direction: column;
     text-align: center;
   }
 
+  .cta-image img {
+    max-width: 240px;
+    margin-bottom: 1.5rem;
+  }
+
   .cta-text {
     max-width: 100%;
     text-align: center;
   }
+
+  .cta-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .cta-text p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
 }
+
+
 
