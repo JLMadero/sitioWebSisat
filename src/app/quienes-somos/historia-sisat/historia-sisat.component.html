@@ -1,9 +1,32 @@
-<section class="historia">
-  <img src="assets/imgs/png blanco.png" alt="Logo SISAT" class="logo" loading="lazy" />
-  <div class="historia-texto">
-    <p>Co-fundada en 2008, <strong class="rojo">SISAT</strong> nace con el objetivo de ayudar a las empresas a controlar y administrar la logística de distribución...</p>
-    <p>A partir del 2017 <strong class="rojo">desarrollamos nuestro software</strong> para atender el cambio...</p>
-    <p>En <strong class="rojo">SISAT</strong> seguimos construyendo nuestra historia...</p>
+<div class="titulo-historia-container">
+  <h2 class="titulo-historia">Nuestra Historia</h2>
+</div>
+
+<section class="linea-tiempo-carousel"
+         (touchstart)="onTouchStart($event)"
+         (touchmove)="onTouchMove($event)"
+         (touchend)="onTouchEnd()"
+         (mousedown)="onMouseDown($event)"
+         (mousemove)="onMouseMove($event)"
+         (mouseup)="onMouseUp()"
+         (mouseleave)="onMouseLeave()">
+
+  <!-- Solo una imagen visible -->
+  <div class="carousel-wrapper">
+    <img [src]="imagenes[imagenActual]" class="carousel-item" />
+  </div>
+
+  <!-- INDICADOR -->
+  <div class="carousel-indicator">
+    <div class="icono-emoji">👈👉</div> 
+    <p>Desliza para explorar la historia</p>
   </div>
 </section>
+
+
+
+
+
+
+
 

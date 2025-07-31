@@ -10,7 +10,7 @@ import { InfoTecnicaAppComponent } from './info-tecnica-app/info-tecnica-app.com
   standalone: true,
   imports: [BeneficiosAppComponent, CtaFinalAppComponent, DiferenciadoresAppComponent, HeroAppMovilComponent, InfoTecnicaAppComponent],
   templateUrl: './app.component.html',
-  styleUrl: '../styleTriptico.css'
+  styleUrl: './app.component.css'
 })
 export class AppComponent {
   

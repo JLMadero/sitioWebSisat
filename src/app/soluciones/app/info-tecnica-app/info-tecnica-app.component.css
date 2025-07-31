@@ -1,6 +1,5 @@
 .funcionamiento-app {
   padding: 4rem 2rem;
-  background: #fff;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
@@ -52,13 +51,13 @@
 .contenido h3 {
   font-size: 1.1rem;
   margin: 0 0 0.3rem;
-  color: #222;
+  color: #EC2227;
   text-align: left;
 }
 
 .contenido p {
   margin: 0;
-  color: #555;
+  color: #ffffff;
   text-align: left;
   font-size: 0.95rem;
 }

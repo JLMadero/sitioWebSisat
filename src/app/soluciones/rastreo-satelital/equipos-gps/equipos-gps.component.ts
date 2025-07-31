@@ -93,9 +93,18 @@ categoriaSeleccionada: 'gps' | 'sensores' | 'camaras' = 'gps';
     this.equipoSeleccionado = null;
   }
 
-  abrirDetalles(equipo: Equipo) {
-    this.equipoSeleccionado = equipo;
-  }
+ abrirDetalles(equipo: Equipo) {
+  this.equipoSeleccionado = equipo;
+
+  setTimeout(() => {
+    const scrollY = window.scrollY || document.documentElement.scrollTop;
+    const backdrop = document.querySelector('.popup-backdrop') as HTMLElement;
+    if (backdrop) {
+      backdrop.style.top = `${scrollY}px`;
+    }
+  }, 0);
+}
+
 
   cerrarDetalles() {
     this.equipoSeleccionado = null;

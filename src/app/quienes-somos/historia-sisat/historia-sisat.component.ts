@@ -1,26 +1,92 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-historia-sisat',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './historia-sisat.component.html',
   styleUrl: './historia-sisat.component.css'
 })
-export class HistoriaSisatComponent implements AfterViewInit {
+export class HistoriaSisatComponent  {
+  imagenes = [
+    'assets/imgs/Linea1_recortada.png',
+    'assets/imgs/Linea2_recortada.png',
+    'assets/imgs/resized_Linea3-negro.jpg'
+  ];
 
-  ngAfterViewInit(): void {
-    const paragraphs = document.querySelectorAll('.historia-texto p');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
+  imagenActual = 0;
+  private startX = 0;
+  private endX = 0;
+  private dragging = false;
 
-    paragraphs.forEach(p => observer.observe(p));
+  getTransform() {
+    return `translateX(-${this.imagenActual * 100}%)`;
+  }
+
+  siguiente() {
+    this.imagenActual = (this.imagenActual + 1) % this.imagenes.length;
+  }
+
+  anterior() {
+    this.imagenActual =
+      (this.imagenActual - 1 + this.imagenes.length) % this.imagenes.length;
+  }
+
+  // TOUCH
+  onTouchStart(event: TouchEvent) {
+    this.startX = event.touches[0].clientX;
+  }
+
+  onTouchMove(event: TouchEvent) {
+    this.endX = event.touches[0].clientX;
+  }
+
+  onTouchEnd() {
+    this.handleSwipe();
+  }
+
+  // MOUSE
+  onMouseDown(event: MouseEvent) {
+    this.dragging = true;
+    this.startX = event.clientX;
+  }
+
+  onMouseMove(event: MouseEvent) {
+    if (this.dragging) {
+      this.endX = event.clientX;
+    }
+  }
+
+  onMouseUp() {
+    if (this.dragging) {
+      this.dragging = false;
+      this.handleSwipe();
+    }
+  }
+
+  onMouseLeave() {
+    if (this.dragging) {
+      this.dragging = false;
+      this.handleSwipe();
+    }
+  }
+
+  // Común
+  private handleSwipe() {
+    const threshold = 50; // píxeles para considerar swipe
+    const delta = this.endX - this.startX;
+
+    if (Math.abs(delta) > threshold) {
+      if (delta < 0) {
+        this.siguiente();
+      } else {
+        this.anterior();
+      }
+    }
+
+    this.startX = 0;
+    this.endX = 0;
   }
 }
 

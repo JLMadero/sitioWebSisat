@@ -1,52 +1,115 @@
 .diferenciadores-section {
-    
-  padding: 4rem 2rem;
+  padding: 6rem 2rem;
   text-align: center;
+  color: #fff;
+  background: linear-gradient(180deg, #010101 0%, #1b004d 100%);
+}
+
+.titulo-seccion {
+  font-size: 2.8rem;
+  font-weight: bold;
   color: #ffffff;
-  background: transparent;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  margin-bottom: 3rem;
 }
 
 .cards-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-  margin-top: 2rem;
+  gap: 2.5rem;
 }
 
 .diferenciador-card {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(6px);
-  padding: 2rem;
-  border-radius: 16px;
-  width: 260px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  width: 280px;
+  padding: 2.5rem 1.5rem;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
   transition: transform 0.4s ease, box-shadow 0.3s ease;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.diferenciador-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at center, #ec2227 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 0;
+}
+
+.diferenciador-card:hover::before {
+  opacity: 0.06;
 }
 
 .diferenciador-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 14px 32px rgba(236, 34, 39, 0.4);
+}
+
+.icono-dif {
+  background: #ec2227;
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 1.2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icono-dif img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
 }
 
 .diferenciador-card h3 {
-    
+  font-size: 1.4rem;
+  font-weight: 600;
   color: #ffffff;
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+  position: relative;
+  z-index: 1;
 }
 
 .diferenciador-card p {
   font-size: 0.95rem;
-  color: #e0e0e0;
-  line-height: 1.4;
+  color: #dddddd;
+  line-height: 1.5;
+  position: relative;
+  z-index: 1;
 }
 
+.emoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Responsive */
 @media (max-width: 768px) {
+  .cards-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .diferenciador-card {
-    width: 100%;
+    width: 90%;
+  }
+
+  .titulo-seccion {
+    font-size: 2rem;
   }
 }
+

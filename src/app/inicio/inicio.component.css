@@ -23,11 +23,11 @@ body {
 }
 
 #sisatron-preload {
-  width: 260px;
+  width: 560px;
   max-width: 65vw;
   opacity: 0;
   transform: scale(0.8);
-  animation: sisatronIn 2s ease forwards 0.5s, blinkEyes 2s infinite 2.5s;
+  animation: sisatronIn 1.5s ease forwards 0.2s, blinkEyes 2s infinite 1s;
 }
 
 @keyframes sisatronIn {
@@ -58,11 +58,11 @@ body {
 
 .telon-izquierdo {
   left: 0;
-  animation: abrirTelonIzq 2s ease forwards 2s;
+  animation: abrirTelonIzq 1s ease forwards 1s;
 }
 
 .telon-derecho {
-  animation: abrirTelonDer 2s ease forwards 2s;
+  animation: abrirTelonDer 1s ease forwards 1s;
 }
 
 @keyframes abrirTelonIzq {
@@ -76,7 +76,7 @@ body {
 }
 
 #preloader.fade-out {
-  animation: fadeOutPreloader 1s ease forwards 4s;
+  animation: fadeOutPreloader 1s ease forwards 2s;
 }
 
 @keyframes fadeOutPreloader {
